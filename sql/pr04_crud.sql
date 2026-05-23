@@ -6,7 +6,14 @@
 
 USE publishing;
 
+-- Workbench за замовчуванням блокує UPDATE/DELETE без WHERE по PK (Safe Update Mode).
+-- Для навчальних прикладів вимикаємо на час сесії.
+SET SQL_SAFE_UPDATES = 0;
+
 -- ===== INSERT — додавання нового автора =====================================
+-- Очищуємо попередній newcomer (якщо лишився з минулого запуску) — приклад ідемпотентний.
+DELETE FROM Authors WHERE Email = 'newcomer@ex.com';
+
 INSERT INTO Authors (Name, Email, Country)
 VALUES ('Newcomer Author', 'newcomer@ex.com', 'Poland');
 
