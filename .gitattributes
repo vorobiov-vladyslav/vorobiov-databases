@@ -1,0 +1,13 @@
+# Бінарні формати — не diff-имо як текст
+*.docx binary
+*.mwb  binary
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.pdf  binary
+
+# SQL — текст
+*.sql text eol=lf
+
+# Текстова версія зошита — щоб мати diff по змісту
+notebook/zoshyt.txt text eol=lf

@@ -1,0 +1,22 @@
+# Робочі директорії — генеруються заново
+notebook/unpacked/
+
+# Великі або відновлювані файли
+notebook/zoshyt.html
+notebook/zoshyt.pdf
+notebook/zoshyt.original.docx
+
+# Python кеш
+__pycache__/
+*.pyc
+*.pyo
+
+# Сміття редакторів
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS
+.DS_Store
+Thumbs.db

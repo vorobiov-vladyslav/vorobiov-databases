@@ -1,0 +1,5237 @@
+﻿Робочий зошит
+з дисципліни «Бази даних»
+
+
+Вітаємо тебе в навчальному процесі дисципліни!
+
+
+Перед тобою робочий зошит студента — інструмент для зберігання посилань на всі розв’язані під час курсу задачі. А також - для зворотного зв’язку від викладача щодо виконання цих завдань.
+
+
+Він допоможе впорядкувати результати роботи, а викладачеві — швидко перевірити виконання та дотримання дедлайнів.
+
+
+Як працювати з цим зошитом?
+* Відкрий цей зошит на редагування, щоб викладач міг залишити зворотний зв’язок на твої завдання.
+* Упродовж семестру виконуй завдання до призначеної дати.
+* Після завершення останнього завдання  додай посилання на зошит, а також безпосередньо файл зошиту у LMS для перевірки.
+ Як оцінюється виконання практичних робіт?
+Зауваження
+	Віднімається балів
+	Відсутнє виконання практичної роботи до теми
+	-1
+	Практичну роботу до теми виконано частково, а саме:
+* Неправильний SQL
+* Не дотримано формату, визначеного для здачі
+* Виконано не всі задачі в межах практичної роботи
+	-0,5
+	
+
+	
+
+
+
+Навчання — це не передача знань, а створення умов для їх відкриття
+
+
+Зміст
+
+
+📝Практична робота до теми 3. «Проектування реляційних баз даних з використанням семантичних моделей»        3
+📝Практична робота до теми 4. «DDL та DML команди»        8
+📝Практична робота до теми 5. «DQL команди (Data Query Language)»        26
+📝Практична робота до теми 6. «Складні SQL вирази»        47
+📝Практична робота до теми 7. «Вкладені запити. Повторне використання коду»        56
+📝Практична робота до теми 8. «Додаткові вбудовані SQL функції»        62
+📝Практична робота до теми 9. «Обробка та візуалізація даних засобами Python»        73
+
+
+________________
+
+
+📝Практична робота до теми 3. «Проектування реляційних баз даних з використанням семантичних моделей»
+
+
+Мета роботи
+
+
+Ознайомитися з процесом моделювання предметної області, визначенням сутностей, атрибутів та зв’язків між ними; навчитись будувати ER-діаграму видавничого процесу.
+
+
+________________
+
+
+
+
+Завдання
+
+
+Розробити ER-діаграму видавничої компанії, яка займається підготовкою й виданням книжок.
+
+
+
+
+Опис предметної області
+
+
+Видавнича компанія співпрацює з авторами та виконавцями (редакторами, коректорами, перекладачами), укладає з ними контракти та приймає замовлення на видання книжок.
+
+
+
+
+Основні положення
+
+
+Автор може написати одну або декілька книжок.
+Книга може мати одного або декількох авторів.
+Працівники видавництва можуть редагувати кілька книжок.
+Для кожного автора та виконавця оформлюється контракт.
+Клієнти можуть робити замовлення на видання однієї або кількох книжок.
+Одне замовлення може включати одну або більше книжок.
+
+
+________________
+
+
+
+
+Що зробити
+
+
+1. Визначити сутності (наЗадача: Автори, Книги, Співробітники, Контракти, Замовлення).
+2. Визначити атрибути сутностей (наЗадача: ПІБ автора, дата контракту, назва книги, дата замовлення тощо).
+3. Визначити типи зв’язків (1:1, 1:M, M:N).
+4. Побудувати ER-діаграму з використанням нотації Чена або іншої узгодженої нотації.
+5. Оформити Результати у вигляді схеми (PowerPoint, Draw.io, Visio або інший інструмент).
+Очікуваний результат
+
+
+ER-діаграма предметної області «Видавнича компанія»
+Всі сутності мають назви та атрибути
+Вказані всі зв’язки та їхня кратність
+Присутні проміжні сутності для M:N зв’язків (за необхідності)
+________________
+
+
+________________
+
+
+
+
+
+
+Опис покрокового виконання завдання
+
+
+1. Проаналізувати опис і за потреби сформулювати припущення (assumptions).
+2. Виділити первинні сутності (Entities).
+
+
+Заповніть таблицю, додайте рядків за потреби.
+Сутність (Entity)
+	Опис (роль у предметній області)
+	Коментар / Припущення
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+3. Перелік атрибутів для кожної сутності та позначити первинні/зовнішні ключі.
+
+
+Для кожної сутності визначте атрибути та ключі.
+Сутність
+	Атрибут
+	Тип (даних)
+	PK
+	FK → (ціль)
+	Правила (NOT NULL, UNIQUE, CHECK)
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+4. Визначити зв’язки (Relationships) і їх кратності (1:1, 1:M, M:N).
+
+
+Опишіть зв’язки між сутностями та визначте кратності.
+Від (Entity A)
+	До (Entity B)
+	Тип (1:1 / 1:M / M:N)
+	Назва/Семантика зв’язку
+	Чи потрібна асоціативна сутність?
+	Коментар / Правила
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+Для зв’язків M:N запропонувати асоціативні сутності (таблиці-зв’язки).
+Скласти ER-діаграму (Чена або Crow’s Foot).
+Описати 3–5 бізнес-правил і обмежень цілісності (UNIQUE, NOT NULL, CHECK).
+Книга повинна мати щонайменше одного автора.
+Контракт обов’язково пов’язаний з однією фізичною особою (автор або співробітник).
+У замовленні має бути принаймні одна позиція книги.
+Дата закінчення контракту ≥ дати початку (CHECK).
+ISBN книги є унікальним (UNIQUE).
+________________
+
+
+
+
+Рекомендовані інструменти для діаграм
+draw.io / diagrams.net
+Lucidchart / Miro (онлайн)
+Visio / PowerPoint (фігури: сутність=прямокутник, зв’язок=ромб)
+
+
+________________
+
+
+
+
+Чекліст перед здачею
+
+
+* Визначено всі ключові сутності предметної області.
+* Є атрибути з позначенням PK/FK, потрібні обмеження.
+* Усі зв’язки позначені, кратності коректні.
+* M:N зв’язки реалізовано через асоціативні сутності.
+* Додано мінімум 3 правила цілісності.
+* Діаграма читабельна і містить легенду/нотацію.
+
+
+________________
+
+
+
+
+Уточнення щодо необхідних даних для ER-діаграми
+
+
+Для правильного проектування ER-діаграми студенти повинні використовувати наступні сутності та атрибути предметної області видавничої компанії:
+
+
+Сутність: Автори
+- AuthorID (PK)
+- Name
+- Email
+- Phone
+- Country
+
+Сутність: Книги
+- BookID (PK)
+- Title
+- Genre
+- ISBN (UNIQUE)
+- PublishYear
+
+Сутність: Співробітники
+- EmployeeID (PK)
+- Name
+- Role
+- Email
+
+Сутність: Контракт
+- ContractID (PK)
+- PersonID (FK — Автор або Співробітник)
+- ContractType
+- StartDate
+- EndDate
+
+Сутність: Замовлення
+- OrderID (PK)
+- OrderDate
+- ClientName
+- Status
+
+Типи зв’язків:
+- Автор — Книга: M:N
+- Співробітник — Книга: M:N
+- Книга — Замовлення: M:N
+- Автор/Співробітник — Контракт: 1:M
+
+Для всіх зв’язків M:N необхідно створити проміжні таблиці (асоціативні сутності).
+Бізнес-правила:
+Книга повинна мати мінімум одного автора
+ISBN книги має бути унікальним
+Дата завершення контракту не може бути раніше дати початку
+Замовлення повинно містити хоча б одну книгу
+________________
+
+
+Контрольні запитання
+
+
+Які сутності ви виділили? Чому саме ці?
+Які атрибути потрібні кожній сутності?
+Де зустрічаються зв’язки типу M:N? Як вони реалізуються?
+Як виглядатиме структура бази даних на основі вашої ER-моделі?
+________________
+
+
+Додаткове творче завдання (за бажанням)
+
+
+Розширити модель, додавши:
+* інформацію про рецензентів
+* маркетинговий відділ і рекламу книжок
+* облік тиражів і продажів
+________________
+
+
+
+
+
+
+🔷 Додай у це поле посилання на виконане завдання. 👇
+
+
+
+
+	
+
+🔷 Додай у це поле скрін(и) на виконане завдання. 👇
+
+
+
+
+	
+
+
+
+
+
+🔵Зворотний зв’язок викладача
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+________________
+
+
+📝Практична робота до теми 4. «DDL та DML команди»
+
+
+Мета роботи
+
+
+Закріпити навички роботи з командами DDL (визначення структури даних) і DML (маніпулювання даними) на Задачаі реальної бази видавництва.
+
+
+________________
+
+
+
+
+Завдання
+
+
+Необхідно створити структуру таблиць, визначати зв’язки між ними, додавати, змінювати, видаляти та вибирати дані за допомогою SQL кода.
+
+
+
+
+Опис предметної області
+
+
+Видавництво зберігає інформацію про авторів, книги, співробітників, контракти, замовлення клієнтів і позиції замовлень.
+* Authors — зберігає дані про авторів (ім’я, країна, контактна інформація).
+* Books — містить інформацію про книги (назва, жанр, ISBN, рік видання).
+* AuthorBook — реалізує зв’язок “багато-до-багатьох” між авторами і книгами.
+* Employees — працівники видавництва (редактори, менеджери, маркетологи).
+* EmployeeBook — показує, який співробітник працював над якою книгою і яку виконував роль.
+* Contracts — договори між авторами та видавництвом.
+* Orders — замовлення від клієнтів.
+* OrderItem — конкретні позиції замовлення (книга, кількість, ціна).
+
+
+
+
+Основні положення
+
+
+DDL (Data Definition Language) — Мова визначення даних
+Призначення:
+Використовується для створення, зміни та видалення структур об’єктів бази даних, таких як таблиці, індекси, подання (views) та схеми.
+
+
+Основні команди:
+* CREATE — створює нові об’єкти бази даних (наЗадача, CREATE TABLE).
+* ALTER — змінює структуру існуючого об’єкта (наЗадача, ALTER TABLE).
+* DROP — видаляє об’єкт із бази даних (наЗадача, DROP TABLE).
+* TRUNCATE — видаляє всі записи з таблиці, але залишає її структуру.
+* RENAME — перейменовує об’єкт бази даних.
+
+
+DML (Data Manipulation Language) — Мова маніпулювання даними
+Призначення:
+Забезпечує операції зі зміни та опрацювання даних, що зберігаються в таблицях бази даних.
+Основні команди:
+* SELECT — вибирає дані з однієї або кількох таблиць.
+Хоча команда не змінює дані, вона належить до DML, оскільки оперує ними.
+* INSERT — додає нові рядки даних до таблиці.
+* UPDATE — змінює існуючі дані в таблиці.
+* DELETE — видаляє рядки з таблиці.
+* MERGE — поєднує операції вставки та оновлення даних у межах однієї таблиці.
+
+
+________________
+
+
+
+
+Що зробити
+
+
+   1. Створити структуру бази даних відповідно до ERD (таблиці та зв’язки).
+   2. Заповнити таблиці тестовими даними (не менше 3–5 записів у кожній).
+   3. Виконати типові DML-операції:
+   * вставку нових записів (INSERT)
+   * оновлення певних даних (UPDATE)
+   * видалення запису (DELETE)
+   * вибірку (SELECT)
+   4. Побудувати запити з JOIN для отримання зв’язаних даних.
+
+
+
+
+Очікуваний результат
+
+
+ER-діаграма предметної області «Видавнича компанія»
+Виконані операції DDL та DML із коректними Результатами.
+
+
+________________
+
+
+________________
+
+
+
+
+Опис покрокового виконання завдання
+
+
+   1. Створення структури (DDL) за наведеними даними
+
+
+Опис структури бази даних видавництва.
+Повна документація зі структурованими таблицями полів та зв'язків.
+
+Authors
+Поле
+	Тип
+	NULL
+	PK/FK
+	Опис
+	Примітки
+	AuthorID
+	INT
+	NO
+	PK
+	Ідентифікатор автора
+	
+
+	Name
+	VARCHAR(200)
+	NO
+	
+
+	ПІБ автора
+	
+
+	Email
+	VARCHAR(255)
+	YES
+	
+
+	Email
+	
+
+	Phone
+	VARCHAR(50)
+	YES
+	
+
+	Телефон
+	
+
+	Country
+	VARCHAR(100)
+	YES
+	
+
+	Країна
+	
+
+	
+
+Books
+Поле
+	Тип
+	NULL
+	PK/FK
+	Опис
+	Примітки
+	BookID
+	INT
+	NO
+	PK
+	ID книги
+	
+
+	Title
+	VARCHAR(300)
+	NO
+	
+
+	Назва книги
+	
+
+	Genre
+	VARCHAR(100)
+	YES
+	
+
+	Жанр
+	
+
+	ISBN
+	VARCHAR(32)
+	NO
+	UNIQUE
+	Код книги
+	унікальний
+	PublishYear
+	YEAR
+	YES
+	
+
+	Рік видання
+	
+
+	
+
+AuthorBook
+Поле
+	Тип
+	NULL
+	PK/FK
+	Опис
+	Примітки
+	AuthorID
+	INT
+	NO
+	PK/FK
+	Автор
+	
+
+	BookID
+	INT
+	NO
+	PK/FK
+	Книга
+	
+
+	AuthorOrder
+	INT
+	YES
+	
+
+	Порядок автора
+	
+
+	
+
+Employees
+Поле
+	Тип
+	NULL
+	PK/FK
+	Опис
+	Примітки
+	EmployeeID
+	INT
+	NO
+	PK
+	ID працівника
+	
+
+	Name
+	VARCHAR(200)
+	NO
+	
+
+	ПІБ
+	
+
+	Role
+	ENUM
+	NO
+	
+
+	Роль працівника
+	ENUM('Edit', 'Proofread', 'Translate', 'Design')
+	Email
+	VARCHAR(255)
+	YES
+	
+
+	Email
+	
+
+	
+
+EmployeeBook
+Поле
+	Тип
+	NULL
+	PK/FK
+	Опис
+	Примітки
+	EmployeeID
+	INT
+	NO
+	PK/FK
+	Працівник
+	
+
+	BookID
+	INT
+	NO
+	PK/FK
+	Книга
+	
+
+	Task
+	ENUM
+	YES
+	
+
+	Задача
+	редагування/дизайн/рев’ю
+	Contracts
+Поле
+	Тип
+	NULL
+	PK/FK
+	Опис
+	Примітки
+	ContractID
+	INT
+	NO
+	PK
+	ID контракту
+	
+
+	AuthorID
+	INT
+	NO
+	FK
+	Автор
+	
+
+	EmployeeID
+	INT
+	NO
+	FK
+	Менеджер
+	
+
+	ContractType
+	ENUM
+	NO
+	
+
+	Тип контракту
+	
+
+	StartDate
+	DATE
+	NO
+	
+
+	Дата початку
+	
+
+	EndDate
+	DATE
+	YES
+	
+
+	Дата завершення
+	
+
+	
+
+Orders
+Поле
+	Тип
+	NULL
+	PK/FK
+	Опис
+	Примітки
+	OrderID
+	INT
+	NO
+	PK
+	ID замовлення
+	
+
+	OrderDate
+	DATE
+	NO
+	
+
+	Дата замовлення
+	
+
+	ClientName
+	VARCHAR(200)
+	NO
+	
+
+	Клієнт
+	
+
+	Status
+	ENUM
+	NO
+	
+
+	Статус
+	
+
+	
+
+OrderItem
+Поле
+	Тип
+	NULL
+	PK/FK
+	Опис
+	Примітки
+	OrderItemID
+	INT
+	NO
+	PK
+	ID позиції
+	
+
+	OrderID
+	INT
+	NO
+	FK
+	Замовлення
+	
+
+	BookID
+	INT
+	NO
+	FK
+	Книга
+	
+
+	Quantity
+	INT
+	NO
+	
+
+	Кількість
+	
+
+	UnitPrice
+	DECIMAL(10,2)
+	NO
+	
+
+	Ціна
+	
+
+	
+
+Зверніть увагу:
+
+
+PK/FK означає, що поле одночасно виконує роль:
+   * PK (Primary Key) первинний ключ
+   * FK (Foreign Key) зовнішній ключ
+
+
+Тобто в таких таблицях (наЗадача, AuthorBook, EmployeeBook) поле є частиною складеного первинного ключа і одночасно посилається на іншу таблицю.
+
+
+
+
+
+
+Пояснення до завдання
+
+
+Таблиця AuthorBook:
+Поле  PK  FK
+AuthorID  ✅  ✅ (→ Authors.AuthorID)
+BookID  ✅  ✅ (→ Books.BookID)
+
+
+Це класична конструкція для таблиць багато-до-багатьох (M:N).
+
+
+Коли так роблять?
+
+
+Коли таблиця:
+
+
+   * пов’язує два об’єкти (книгу й автора)
+   * ідентифікується комбінацією цих полів (немає окремого ID)
+   * повинна слідкувати за зв’язками із базовими таблицями
+
+
+
+
+Чому не просто окремий ID?
+
+
+Бо ця таблиця сама по собі не є сутністю, вона лише описує зв’язок.
+
+
+Типово:
+
+
+AuthorBook
+-----------
+AuthorID  PK/FK
+BookID    PK/FK
+AuthorOrder  (просто поле)
+
+
+Підсумок
+
+
+   * PK = гарантує унікальність рядка
+   * FK = гарантує, що значення існує в іншій таблиці
+   * PK/FK = поле одночасно унікальне в комбінації й прив’язане до іншої таблиці
+
+
+
+
+2. Створення структури (DDL) мовою SQL
+
+
+-- ===============================
+-- Schema: publishing
+-- MySQL 8.0+ (Workbench)
+-- ===============================
+
+
+DROP DATABASE IF EXISTS publishing;
+CREATE DATABASE publishing
+  DEFAULT CHARACTER SET utf8mb4
+  DEFAULT COLLATE utf8mb4_unicode_ci;
+USE publishing;
+
+
+-- ===============================
+-- Base tables
+-- ===============================
+
+
+CREATE TABLE Authors (
+  AuthorID     INT AUTO_INCREMENT PRIMARY KEY,
+  Name         VARCHAR(200) NOT NULL,
+  Email        VARCHAR(255) UNIQUE,
+  Phone        VARCHAR(50),
+  Country      VARCHAR(100)
+) ENGINE=InnoDB;
+
+
+CREATE TABLE Employees (
+  EmployeeID   INT AUTO_INCREMENT PRIMARY KEY,
+  Name         VARCHAR(200) NOT NULL,
+  Role         ENUM('Editor','Proofreader','Translator','Designer') NOT NULL,
+  Email        VARCHAR(255) UNIQUE
+) ENGINE=InnoDB;
+
+
+CREATE TABLE Books (
+  BookID       INT AUTO_INCREMENT PRIMARY KEY,
+  Title        VARCHAR(300) NOT NULL,
+  Genre        VARCHAR(100),
+  ISBN         VARCHAR(32) NOT NULL,
+  PublishYear  YEAR,
+  CONSTRAINT uq_books_isbn UNIQUE (ISBN)
+) ENGINE=InnoDB;
+
+
+CREATE TABLE Orders (
+  OrderID      INT AUTO_INCREMENT PRIMARY KEY,
+  OrderDate    DATE NOT NULL,
+  ClientName   VARCHAR(200) NOT NULL,
+  Status       ENUM('New','InProgress','Completed','Canceled') NOT NULL DEFAULT 'New'
+) ENGINE=InnoDB;
+
+
+-- Контракти можуть належати автору АБО співробітнику (рівно одне).
+CREATE TABLE Contracts (
+  ContractID   INT AUTO_INCREMENT PRIMARY KEY,
+  AuthorID     INT NULL,
+  EmployeeID   INT NULL,
+  ContractType ENUM('Author','Employee') NOT NULL,
+  StartDate    DATE NOT NULL,
+  EndDate      DATE NULL,
+  CONSTRAINT fk_contract_author   FOREIGN KEY (AuthorID)  REFERENCES Authors(AuthorID)
+    ON UPDATE CASCADE ON DELETE RESTRICT,
+  CONSTRAINT fk_contract_employee FOREIGN KEY (EmployeeID) REFERENCES Employees(EmployeeID)
+    ON UPDATE CASCADE ON DELETE RESTRICT,
+  INDEX ix_contract_author (AuthorID),
+  INDEX ix_contract_employee (EmployeeID)
+) ENGINE=InnoDB;
+
+
+-- ===============================
+-- Associative (M:N) tables
+-- ===============================
+
+
+CREATE TABLE AuthorBook (
+  AuthorID     INT NOT NULL,
+  BookID       INT NOT NULL,
+  AuthorOrder  INT NULL,
+  PRIMARY KEY (AuthorID, BookID),
+  CONSTRAINT fk_ab_author FOREIGN KEY (AuthorID) REFERENCES Authors(AuthorID)
+    ON UPDATE CASCADE ON DELETE CASCADE,
+  CONSTRAINT fk_ab_book   FOREIGN KEY (BookID)   REFERENCES Books(BookID)
+    ON UPDATE CASCADE ON DELETE CASCADE
+) ENGINE=InnoDB;
+
+
+CREATE TABLE EmployeeBook (
+  EmployeeID   INT NOT NULL,
+  BookID       INT NOT NULL,
+  Task         ENUM('Edit','Proofread','Translate','Design') NOT NULL,
+  PRIMARY KEY (EmployeeID, BookID),
+  CONSTRAINT fk_eb_employee FOREIGN KEY (EmployeeID) REFERENCES Employees(EmployeeID)
+    ON UPDATE CASCADE ON DELETE CASCADE,
+  CONSTRAINT fk_eb_book     FOREIGN KEY (BookID)    REFERENCES Books(BookID)
+    ON UPDATE CASCADE ON DELETE CASCADE
+) ENGINE=InnoDB;
+
+
+CREATE TABLE OrderItem (
+  OrderItemID  INT AUTO_INCREMENT PRIMARY KEY,
+  OrderID      INT NOT NULL,
+  BookID       INT NOT NULL,
+  Quantity     INT NOT NULL,
+  UnitPrice    DECIMAL(10,2) NOT NULL,
+  CONSTRAINT fk_oi_order FOREIGN KEY (OrderID) REFERENCES Orders(OrderID)
+    ON UPDATE CASCADE ON DELETE CASCADE,
+  CONSTRAINT fk_oi_book  FOREIGN KEY (BookID)  REFERENCES Books(BookID)
+    ON UPDATE CASCADE ON DELETE RESTRICT,
+  INDEX ix_oi_order (OrderID),
+  INDEX ix_oi_book  (BookID),
+  CONSTRAINT chk_oi_qty  CHECK (Quantity >= 1),
+  CONSTRAINT chk_oi_price CHECK (UnitPrice >= 0)
+) ENGINE=InnoDB;
+
+
+-- ===============================
+-- Minimal demo data (optional)
+-- ===============================
+
+
+INSERT INTO Authors (Name, Email, Country) VALUES
+('Іван Карпенко','ivan@example.com','Switzerland'),
+('Олена Руденко','olena@example.com','Switzerland');
+
+
+INSERT INTO Employees (Name, Role, Email) VALUES
+('Марк Дюпон','Editor','m.dupont@pub.ch'),
+('Анна Мюллер','Proofreader','a.mueller@pub.ch');
+
+
+INSERT INTO Books (Title, Genre, ISBN, PublishYear) VALUES
+('Основи Python','Навчальна','978-1-234-56789-7',2025),
+('Бази даних просто','Навчальна','978-1-987-65432-1',2025);
+
+
+INSERT INTO AuthorBook (AuthorID, BookID, AuthorOrder) VALUES
+(1,1,1),(2,2,1);
+
+
+INSERT INTO EmployeeBook (EmployeeID, BookID, Task) VALUES
+(1,1,'Edit'),(2,2,'Proofread');
+
+
+INSERT INTO Orders (OrderDate, ClientName, Status) VALUES
+('2025-10-30','TechEdu SA','New');
+
+
+INSERT INTO OrderItem (OrderID, BookID, Quantity, UnitPrice) VALUES
+(1,1,50,19.90),
+(1,2,30,24.90);
+
+
+INSERT INTO Contracts (AuthorID, EmployeeID, ContractType, StartDate, EndDate) VALUES
+(1,NULL,'Author','2025-01-01','2025-12-31'),
+(NULL,1,'Employee','2025-02-01',NULL);
+
+
+
+
+3. Підключення до сервера
+
+
+   1. У верхній лівій частині Workbench натисни на з’єднання (Connection) —
+🔹 Local instance MySQL80 або localhost.
+   2. Введи пароль користувача (якщо потрібно).
+   3. Після підключення відкрий вкладку з твоїм insert_ publishing_data.sql.
+   4. Тепер ⚡ Execute стане активним.
+
+
+Що таке «синхронізація»
+
+
+🔹 У тебе є модель — файл publishing.mwb (це логічна схема).
+🔹 І є реальна база даних на сервері MySQL (у Schemas → publishing).
+Коли ти:
+      * Змінюєш щось у моделі (додаєш нове поле або таблицю),
+      * або змінюєш щось у базі вручну через SQL,
+тобі потрібно синхронізувати — щоб модель і база знову збігалися.
+________________
+
+
+
+
+Як виконати синхронізацію моделі з MySQL
+
+
+Крок 1. Відкрий свою модель
+Відкрий файл airport.mwb у MySQL Workbench.
+
+
+Крок 2. Вибери меню:
+Database → Synchronize with Any Source...
+(іноді просто “Synchronize Model...” — залежить від версії Workbench)
+
+
+Крок 3. Вибери підключення
+      1. Відкриється вікно “Select Source” або “Select Connection”.
+      2. Обери своє з’єднання, наЗадача:
+      3. Local instance MySQL80
+      4. Натисни Next →
+
+
+Крок 4. Вибери базу даних
+Workbench запитає, яку схему порівнювати з моделлю.
+✅ Вибери airport
+(або ту базу, з якою ти працюєш).
+Натисни Next →
+
+
+Крок 5. Workbench згенерує порівняння
+На екрані з’явиться таблиця, де показано:
+      * що є в моделі, але немає в базі,
+      * що є в базі, але немає в моделі,
+      * що змінилось.
+Ти побачиш кольорове порівняння (зелений = додати, червоний = видалити, синій = змінити).
+
+
+Крок 6. Вибери, що оновити
+Тут ти можеш:
+      * або оновити базу даних відповідно до моделі (найчастіше),
+      * або оновити модель відповідно до бази.
+✅ Найчастіше ми вибираємо:
+Update Database (Apply changes to database)
+Після цього натисни Next → Execute.
+
+
+Крок 7. Готово 🎉
+Workbench виконає потрібні ALTER TABLE, CREATE TABLE, DROP ... тощо,
+і тепер твоя модель .mwb та база airport будуть повністю синхронізовані.
+________________
+
+
+
+
+💡 Поради:
+      * Якщо ти хочеш лише оновити модель, а не базу — Workbench дозволяє вибрати варіант Update Model instead.
+      * Якщо з’являється попередження “Model and Database differ” — натисни Compare для перегляду змін перед застосуванням.
+      * Перед великими змінами завжди добре зробити Backup бази (через Data Export).
+
+
+
+
+3. Вставка даних у БД Publishing: по 10 записів у кожну таблицю
+
+
+-- Практична робота: INSERT 10 rows into each table (Publishing)
+-- Примітка: за потреби адаптуй ENUM-значення в Role/Task/Status/ContractType
+
+
+-- ===========================
+-- SEED 10 ROWS PER TABLE
+-- Schema: publishing
+-- Перед виконанням: USE publishing;
+-- ===========================
+
+
+START TRANSACTION;
+
+
+-- AUTHORS (10)
+INSERT INTO Authors (Name, Email, Phone, Country) VALUES
+ ('Ірина Савчук','iryna.savchuk@ex.com','+380501111111','Ukraine'),
+ ('Олег Петренко','oleg.petrenko@ex.com','+380671111112','Ukraine'),
+ ('Maria Rossi','m.rossi@ex.com','+39061111111','Italy'),
+ ('Jean Martin','jean.martin@ex.com','+33111111111','France'),
+ ('Anna Müller','anna.mueller@ex.com','+41441111111','Switzerland'),
+ ('Lukas Steiner','lukas.steiner@ex.com','+41441111112','Switzerland'),
+ ('Sofia Garcia','sofia.garcia@ex.com','+34911111111','Spain'),
+ ('Noah Johnson','noah.johnson@ex.com','+12025550111','USA'),
+ ('Akira Tanaka','akira.tanaka@ex.com','+81311111111','Japan'),
+ ('Eva Novak','eva.novak@ex.com','+42021111111','Czechia');
+
+
+-- EMPLOYEES (10)  Role: ENUM('Editor','Proofreader','Translator','Designer')
+INSERT INTO Employees (Name, Role, Email) VALUES
+ ('Alice Novak','Editor','alice@pub.ch'),
+ ('Bohdan Petrenko','Proofreader','bohdan@pub.ch'),
+ ('Chloe Martin','Translator','chloe@pub.ch'),
+ ('Dmytro Savchuk','Designer','dmytro@pub.ch'),
+ ('Emma Rossi','Editor','emma@pub.ch'),
+ ('Felix Weber','Proofreader','felix@pub.ch'),
+ ('Hanna Kovalenko','Translator','hanna@pub.ch'),
+ ('Ivan Horak','Designer','ivan@pub.ch'),
+ ('Julia Novakova','Editor','julia@pub.ch'),
+ ('Karl Meier','Proofreader','karl@pub.ch');
+
+
+-- BOOKS (10)  ISBN must be unique
+INSERT INTO Books (Title, Genre, ISBN, PublishYear) VALUES
+ ('Python для початківців','Навчальна','978-0-100000-001',2023),
+ ('SQL на практиці','Навчальна','978-0-100000-002',2024),
+ ('Data Analytics 101','Навчальна','978-0-100000-003',2025),
+ ('Story Craft','Fiction','978-0-100000-004',2022),
+ ('Mountains & Lakes','Travel','978-0-100000-005',2021),
+ ('AI for Editors','Technology','978-0-100000-006',2025),
+ ('Clean Data','Non-Fiction','978-0-100000-007',2020),
+ ('Sci-Fi Tales','Sci-Fi','978-0-100000-008',2019),
+ ('Business Blue','Business','978-0-100000-009',2024),
+ ('Creative SQL','Technology','978-0-100000-010',2023);
+
+
+-- ORDERS (10)  Status: ENUM('New','InProgress','Completed','Canceled')
+INSERT INTO Orders (OrderDate, ClientName, Status) VALUES
+ (DATE '2025-01-10','TechBooks GmbH','New'),
+ (DATE '2025-01-15','EduLab SA','Completed'),
+ (DATE '2025-02-01','DataWorks AG','InProgress'),
+ (DATE '2025-02-18','Libra LLC','Completed'),
+ (DATE '2025-03-03','Orion Labs','New'),
+ (DATE '2025-03-20','Pixel Media','InProgress'),
+ (DATE '2025-04-05','QuickLearn','Completed'),
+ (DATE '2025-04-22','Read&Co','New'),
+ (DATE '2025-05-09','Star Books','Completed'),
+ (DATE '2025-05-25','Nova Print','Canceled');
+
+
+COMMIT;
+
+
+-- ===========================
+-- ASSOCIATIVE TABLES (M:N)
+-- ===========================
+
+
+START TRANSACTION;
+
+
+-- AUTHORBOOK (10)  link by Email + ISBN
+INSERT INTO AuthorBook (AuthorID, BookID, AuthorOrder)
+SELECT a.AuthorID, b.BookID, 1
+FROM Authors a JOIN Books b
+WHERE a.Email='iryna.savchuk@ex.com' AND b.ISBN='978-0-100000-001';
+
+
+INSERT INTO AuthorBook (AuthorID, BookID, AuthorOrder)
+SELECT a.AuthorID, b.BookID, 1
+FROM Authors a JOIN Books b
+WHERE a.Email='oleg.petrenko@ex.com' AND b.ISBN='978-0-100000-002';
+
+
+INSERT INTO AuthorBook (AuthorID, BookID, AuthorOrder)
+SELECT a.AuthorID, b.BookID, 1
+FROM Authors a JOIN Books b
+WHERE a.Email='m.rossi@ex.com' AND b.ISBN='978-0-100000-003';
+
+
+INSERT INTO AuthorBook (AuthorID, BookID, AuthorOrder)
+SELECT a.AuthorID, b.BookID, 1
+FROM Authors a JOIN Books b
+WHERE a.Email='jean.martin@ex.com' AND b.ISBN='978-0-100000-004';
+
+
+INSERT INTO AuthorBook (AuthorID, BookID, AuthorOrder)
+SELECT a.AuthorID, b.BookID, 1
+FROM Authors a JOIN Books b
+WHERE a.Email='anna.mueller@ex.com' AND b.ISBN='978-0-100000-005';
+
+
+INSERT INTO AuthorBook (AuthorID, BookID, AuthorOrder)
+SELECT a.AuthorID, b.BookID, 1
+FROM Authors a JOIN Books b
+WHERE a.Email='lukas.steiner@ex.com' AND b.ISBN='978-0-100000-006';
+
+
+INSERT INTO AuthorBook (AuthorID, BookID, AuthorOrder)
+SELECT a.AuthorID, b.BookID, 1
+FROM Authors a JOIN Books b
+WHERE a.Email='sofia.garcia@ex.com' AND b.ISBN='978-0-100000-007';
+
+
+INSERT INTO AuthorBook (AuthorID, BookID, AuthorOrder)
+SELECT a.AuthorID, b.BookID, 1
+FROM Authors a JOIN Books b
+WHERE a.Email='noah.johnson@ex.com' AND b.ISBN='978-0-100000-008';
+
+
+INSERT INTO AuthorBook (AuthorID, BookID, AuthorOrder)
+SELECT a.AuthorID, b.BookID, 1
+FROM Authors a JOIN Books b
+WHERE a.Email='akira.tanaka@ex.com' AND b.ISBN='978-0-100000-009';
+
+
+INSERT INTO AuthorBook (AuthorID, BookID, AuthorOrder)
+SELECT a.AuthorID, b.BookID, 1
+FROM Authors a JOIN Books b
+WHERE a.Email='eva.novak@ex.com' AND b.ISBN='978-0-100000-010';
+
+
+-- EMPLOYEEBOOK (10)  Task: ENUM('Edit','Proofread','Translate','Design')
+INSERT INTO EmployeeBook (EmployeeID, BookID, Task)
+SELECT e.EmployeeID, b.BookID, 'Edit'
+FROM Employees e JOIN Books b
+WHERE e.Email='alice@pub.ch' AND b.ISBN='978-0-100000-001';
+
+
+INSERT INTO EmployeeBook (EmployeeID, BookID, Task)
+SELECT e.EmployeeID, b.BookID, 'Proofread'
+FROM Employees e JOIN Books b
+WHERE e.Email='bohdan@pub.ch' AND b.ISBN='978-0-100000-002';
+
+
+INSERT INTO EmployeeBook (EmployeeID, BookID, Task)
+SELECT e.EmployeeID, b.BookID, 'Translate'
+FROM Employees e JOIN Books b
+WHERE e.Email='chloe@pub.ch' AND b.ISBN='978-0-100000-003';
+
+
+INSERT INTO EmployeeBook (EmployeeID, BookID, Task)
+SELECT e.EmployeeID, b.BookID, 'Design'
+FROM Employees e JOIN Books b
+WHERE e.Email='dmytro@pub.ch' AND b.ISBN='978-0-100000-004';
+
+
+INSERT INTO EmployeeBook (EmployeeID, BookID, Task)
+SELECT e.EmployeeID, b.BookID, 'Edit'
+FROM Employees e JOIN Books b
+WHERE e.Email='emma@pub.ch' AND b.ISBN='978-0-100000-005';
+
+
+INSERT INTO EmployeeBook (EmployeeID, BookID, Task)
+SELECT e.EmployeeID, b.BookID, 'Proofread'
+FROM Employees e JOIN Books b
+WHERE e.Email='felix@pub.ch' AND b.ISBN='978-0-100000-006';
+
+
+INSERT INTO EmployeeBook (EmployeeID, BookID, Task)
+SELECT e.EmployeeID, b.BookID, 'Translate'
+FROM Employees e JOIN Books b
+WHERE e.Email='hanna@pub.ch' AND b.ISBN='978-0-100000-007';
+
+
+INSERT INTO EmployeeBook (EmployeeID, BookID, Task)
+SELECT e.EmployeeID, b.BookID, 'Design'
+FROM Employees e JOIN Books b
+WHERE e.Email='ivan@pub.ch' AND b.ISBN='978-0-100000-008';
+
+
+INSERT INTO EmployeeBook (EmployeeID, BookID, Task)
+SELECT e.EmployeeID, b.BookID, 'Edit'
+FROM Employees e JOIN Books b
+WHERE e.Email='julia@pub.ch' AND b.ISBN='978-0-100000-009';
+
+
+INSERT INTO EmployeeBook (EmployeeID, BookID, Task)
+SELECT e.EmployeeID, b.BookID, 'Proofread'
+FROM Employees e JOIN Books b
+WHERE e.Email='karl@pub.ch' AND b.ISBN='978-0-100000-010';
+COMMIT;
+
+
+-- ===========================
+-- CONTRACTS (10)
+-- Тригери вимагають рівно одного власника + відповідний ContractType
+-- ===========================
+START TRANSACTION;
+
+
+-- 5 для авторів
+INSERT INTO Contracts (AuthorID, EmployeeID, ContractType, StartDate, EndDate)
+SELECT a.AuthorID, NULL, 'Author', DATE '2025-01-01', DATE '2025-12-31'
+FROM Authors a WHERE a.Email='iryna.savchuk@ex.com';
+
+
+INSERT INTO Contracts (AuthorID, EmployeeID, ContractType, StartDate, EndDate)
+SELECT a.AuthorID, NULL, 'Author', DATE '2025-02-01', NULL
+FROM Authors a WHERE a.Email='m.rossi@ex.com';
+
+
+INSERT INTO Contracts (AuthorID, EmployeeID, ContractType, StartDate, EndDate)
+SELECT a.AuthorID, NULL, 'Author', DATE '2025-03-01', NULL
+FROM Authors a WHERE a.Email='anna.mueller@ex.com';
+
+
+INSERT INTO Contracts (AuthorID, EmployeeID, ContractType, StartDate, EndDate)
+SELECT a.AuthorID, NULL, 'Author', DATE '2025-03-15', DATE '2026-03-15'
+FROM Authors a WHERE a.Email='akira.tanaka@ex.com';
+
+
+INSERT INTO Contracts (AuthorID, EmployeeID, ContractType, StartDate, EndDate)
+SELECT a.AuthorID, NULL, 'Author', DATE '2025-04-01', NULL
+FROM Authors a WHERE a.Email='eva.novak@ex.com';
+
+
+-- 5 для співробітників
+INSERT INTO Contracts (AuthorID, EmployeeID, ContractType, StartDate, EndDate)
+SELECT NULL, e.EmployeeID, 'Employee', DATE '2025-01-10', NULL
+FROM Employees e WHERE e.Email='alice@pub.ch';
+
+
+INSERT INTO Contracts (AuthorID, EmployeeID, ContractType, StartDate, EndDate)
+SELECT NULL, e.EmployeeID, 'Employee', DATE '2025-02-10', DATE '2025-12-31'
+FROM Employees e WHERE e.Email='bohdan@pub.ch';
+
+
+INSERT INTO Contracts (AuthorID, EmployeeID, ContractType, StartDate, EndDate)
+SELECT NULL, e.EmployeeID, 'Employee', DATE '2025-03-05', NULL
+FROM Employees e WHERE e.Email='chloe@pub.ch';
+
+
+INSERT INTO Contracts (AuthorID, EmployeeID, ContractType, StartDate, EndDate)
+SELECT NULL, e.EmployeeID, 'Employee', DATE '2025-03-20', NULL
+FROM Employees e WHERE e.Email='emma@pub.ch';
+
+
+INSERT INTO Contracts (AuthorID, EmployeeID, ContractType, StartDate, EndDate)
+SELECT NULL, e.EmployeeID, 'Employee', DATE '2025-04-15', NULL
+FROM Employees e WHERE e.Email='karl@pub.ch';
+
+
+COMMIT;
+
+
+-- ===========================
+-- ORDERITEM (10)  (Orders × Books)
+-- ===========================
+START TRANSACTION;
+
+
+INSERT INTO OrderItem (OrderID, BookID, Quantity, UnitPrice)
+SELECT o.OrderID, b.BookID, 3, 49.90
+FROM Orders o JOIN Books b
+WHERE o.ClientName='TechBooks GmbH' AND o.OrderDate=DATE '2025-01-10'
+  AND b.ISBN='978-0-100000-001';
+
+
+INSERT INTO OrderItem (OrderID, BookID, Quantity, UnitPrice)
+SELECT o.OrderID, b.BookID, 2, 59.00
+FROM Orders o JOIN Books b
+WHERE o.ClientName='EduLab SA' AND o.OrderDate=DATE '2025-01-15'
+  AND b.ISBN='978-0-100000-002';
+
+
+INSERT INTO OrderItem (OrderID, BookID, Quantity, UnitPrice)
+SELECT o.OrderID, b.BookID, 1, 39.50
+FROM Orders o JOIN Books b
+WHERE o.ClientName='DataWorks AG' AND o.OrderDate=DATE '2025-02-01'
+  AND b.ISBN='978-0-100000-003';
+
+
+INSERT INTO OrderItem (OrderID, BookID, Quantity, UnitPrice)
+SELECT o.OrderID, b.BookID, 5, 29.90
+FROM Orders o JOIN Books b
+WHERE o.ClientName='Libra LLC' AND o.OrderDate=DATE '2025-02-18'
+  AND b.ISBN='978-0-100000-004';
+
+
+INSERT INTO OrderItem (OrderID, BookID, Quantity, UnitPrice)
+SELECT o.OrderID, b.BookID, 4, 54.00
+FROM Orders o JOIN Books b
+WHERE o.ClientName='Orion Labs' AND o.OrderDate=DATE '2025-03-03'
+  AND b.ISBN='978-0-100000-005';
+
+
+INSERT INTO OrderItem (OrderID, BookID, Quantity, UnitPrice)
+SELECT o.OrderID, b.BookID, 3, 46.00
+FROM Orders o JOIN Books b
+WHERE o.ClientName='Pixel Media' AND o.OrderDate=DATE '2025-03-20'
+  AND b.ISBN='978-0-100000-006';
+
+
+INSERT INTO OrderItem (OrderID, BookID, Quantity, UnitPrice)
+SELECT o.OrderID, b.BookID, 2, 32.00
+FROM Orders o JOIN Books b
+WHERE o.ClientName='QuickLearn' AND o.OrderDate=DATE '2025-04-05'
+  AND b.ISBN='978-0-100000-007';
+
+
+INSERT INTO OrderItem (OrderID, BookID, Quantity, UnitPrice)
+SELECT o.OrderID, b.BookID, 6, 52.50
+FROM Orders o JOIN Books b
+WHERE o.ClientName='Read&Co' AND o.OrderDate=DATE '2025-04-22'
+  AND b.ISBN='978-0-100000-008';
+
+
+INSERT INTO OrderItem (OrderID, BookID, Quantity, UnitPrice)
+SELECT o.OrderID, b.BookID, 2, 28.90
+FROM Orders o JOIN Books b
+WHERE o.ClientName='Star Books' AND o.OrderDate=DATE '2025-05-09'
+  AND b.ISBN='978-0-100000-009';
+
+
+INSERT INTO OrderItem (OrderID, BookID, Quantity, UnitPrice)
+SELECT o.OrderID, b.BookID, 7, 44.00
+FROM Orders o JOIN Books b
+WHERE o.ClientName='Nova Print' AND o.OrderDate=DATE '2025-05-25'
+  AND b.ISBN='978-0-100000-010';
+
+
+COMMIT;
+
+
+-- ===========================
+-- QUICK COUNTS (очікуємо по 10)
+-- ===========================
+SELECT 'Authors' tbl, COUNT(*) cnt FROM Authors
+UNION ALL SELECT 'Employees', COUNT(*) FROM Employees
+UNION ALL SELECT 'Books', COUNT(*) FROM Books
+UNION ALL SELECT 'Orders', COUNT(*) FROM Orders
+UNION ALL SELECT 'AuthorBook', COUNT(*) FROM AuthorBook
+UNION ALL SELECT 'EmployeeBook', COUNT(*) FROM EmployeeBook
+UNION ALL SELECT 'Contracts', COUNT(*) FROM Contracts
+UNION ALL SELECT 'OrderItem', COUNT(*) FROM OrderItem;
+
+
+
+
+4. Перевірка вмісту таблиць
+
+
+-- ===========================
+-- Перевіримо вміст таблиць
+-- ===========================
+SELECT * FROM authors LIMIT 0, 1000;
+SELECT * FROM authors;
+SELECT * FROM employees;
+SELECT * FROM books;
+SELECT * FROM authorbook;
+SELECT * FROM contracts;
+SELECT * FROM employeebook;
+SELECT * FROM orderitem;
+SELECT * FROM orders
+
+
+
+
+
+
+5. Результат 
+
+
+ Зображення, що містить текст, програмне забезпечення, Комп’ютерна піктограма, Веб-сторінка
+
+Вміст на основі ШІ може бути неправильним. 
+
+________________
+
+
+
+
+🔷 Додай у це поле посилання на виконане завдання. 👇
+
+
+
+
+	
+
+🔷 Додай у це поле скрін(и) на виконане завдання. 👇
+
+
+
+
+	
+
+
+
+
+
+🔵Зворотний зв’язок викладача
+
+
+
+
+	________________
+
+
+📝Практична робота до теми 5. «DQL команди (Data Query Language)»
+
+
+Мета роботи
+
+
+Закріпити практичні навички формування запитів для отримання даних із бази даних.
+Навчитися використовувати оператори SELECT, WHERE, ORDER BY, GROUP BY, HAVING, JOIN, EXISTS, підзапити та віконні функції для аналітичних запитів у реальній структурі бази даних.
+________________
+
+
+Завдання
+
+
+На основі існуючої бази даних Publishing, що містить інформацію про авторів, книги, співробітників, контракти, замовлення та позиції замовлень,
+побудувати набір SQL-запитів для вибірки, фільтрації, аналізу та агрегування даних за допомогою команд мови DQL (Data Query Language).
+
+
+
+
+Опис предметної області
+
+
+База даних Publishing зберігає інформацію про авторів, книги, співробітників видавництва, контракти, замовлення клієнтів і позиції замовлень.
+Основні таблиці:
+•        authors — дані про авторів (ім’я, країна, контактна інформація)
+•        books — книги (назва, жанр, ISBN, рік видання)
+•        authorbook — зв’язок авторів і книг
+•        employees, employeebook — співробітники та їх участь у проектах
+•        contracts — договори з авторами
+•        orders, orderitem — замовлення клієнтів і продані книги
+
+
+Основні положення
+
+
+DQL (Data Query Language) використовується для отримання даних із бази даних.
+Основна команда: SELECT
+Допоміжні конструкції:
+WHERE, ORDER BY, GROUP BY, HAVING, JOIN, EXISTS, WITH, віконні функції (RANK(), ROW_NUMBER() тощо).
+________________
+
+
+
+
+Що зробити
+
+
+      1. Виконати набір практичних запитів для вибірки даних.
+      2. Для кожного завдання — записати SQL-запит, коротко пояснити його логіку, зробити скрін Результату.
+
+
+Очікуваний результат
+
+
+Отримані навички створення простих і складних запитів у SQL.
+Відпрацьовані прийоми фільтрації, сортування, агрегації, групування, приєднання таблиць і вкладених запитів.
+Побудовано Задачаи аналітичних вибірок за даними видавництва.
+________________
+
+
+
+
+Опис покрокового виконання завдання
+
+
+Задача 1. Прості вибірки
+
+
+SELECT * FROM authors;
+SELECT Name, Country FROM authors WHERE Country = 'Ukraine';
+SELECT Title, Genre, PublishYear FROM books ORDER BY PublishYear DESC;
+
+
+Результат
+  
+
+________________
+
+
+
+
+🔷 Додай у це поле посилання на виконане завдання. 👇
+
+
+
+
+	
+
+🔷 Додай у це поле скрін(и) на виконане завдання. 👇
+
+
+
+
+	
+
+________________
+
+
+Задача 2. Зв’язки між таблицями (JOIN)
+
+
+SELECT a.Name AS Author, b.Title AS Book
+FROM authors a
+JOIN authorbook ab ON a.AuthorID = ab.AuthorID
+JOIN books b ON b.BookID = ab.BookID;
+
+
+Результат
+  
+
+________________
+
+
+
+
+🔷 Додай у це поле посилання на виконане завдання. 👇
+
+
+
+
+	
+
+🔷 Додай у це поле скрін(и) на виконане завдання. 👇
+
+
+
+
+	
+
+________________
+
+
+
+
+Задача 3. Фільтрація і сортування
+
+
+SELECT Title, Genre, PublishYear
+FROM books
+WHERE Genre = 'Technology'
+ORDER BY PublishYear DESC;
+
+
+Результат
+  
+
+
+
+________________
+
+
+
+
+🔷 Додай у це поле посилання на виконане завдання. 👇
+
+
+
+
+	
+
+🔷 Додай у це поле скрін(и) на виконане завдання. 👇
+
+
+
+
+	
+
+________________
+
+
+Задача 4. Агрегація і групування
+
+
+SELECT b.Genre, COUNT(*) AS BooksCount
+FROM books b
+GROUP BY b.Genre
+ORDER BY BooksCount DESC;
+
+
+Результат
+  
+
+________________
+
+
+
+
+🔷 Додай у це поле посилання на виконане завдання. 👇
+
+
+
+
+	
+
+🔷 Додай у це поле скрін(и) на виконане завдання. 👇
+
+
+
+
+	
+
+________________
+
+
+Задача 5. Використання HAVING (фільтр по агрегату)
+
+
+SELECT b.Title, SUM(oi.Quantity * oi.UnitPrice) AS Revenue
+FROM orderitem oi
+JOIN books b ON b.BookID = oi.BookID
+GROUP BY b.Title
+HAVING Revenue > 1000
+ORDER BY Revenue DESC;
+
+
+Результат
+  
+
+________________
+
+
+
+
+🔷 Додай у це поле посилання на виконане завдання. 👇
+
+
+
+
+	
+
+🔷 Додай у це поле скрін(и) на виконане завдання. 👇
+
+
+
+
+	
+
+________________
+
+
+Задача 6. Вкладені запити
+
+
+SELECT b.Title
+FROM books b
+WHERE b.BookID IN (
+    SELECT BookID
+    FROM orderitem
+);
+
+
+Результат
+  
+
+________________
+
+
+
+
+🔷 Додай у це поле посилання на виконане завдання. 👇
+
+
+
+
+	
+
+🔷 Додай у це поле скрін(и) на виконане завдання. 👇
+
+
+
+
+	
+
+________________
+________________
+
+
+Задача 7. Використання EXISTS
+
+
+SELECT a.Name
+FROM authors a
+WHERE EXISTS (
+    SELECT 1
+    FROM authorbook ab
+    JOIN orderitem oi ON oi.BookID = ab.BookID
+    WHERE ab.AuthorID = a.AuthorID
+);
+
+
+Результат
+  
+
+________________
+
+
+
+
+🔷 Додай у це поле посилання на виконане завдання. 👇
+
+
+
+
+	
+
+🔷 Додай у це поле скрін(и) на виконане завдання. 👇
+
+
+
+
+	
+
+________________
+
+
+Задача 8. Аналітичні (віконні) функції
+
+
+WITH sales AS (
+    SELECT b.Title, b.Genre,
+           SUM(oi.Quantity * oi.UnitPrice) AS Revenue
+    FROM orderitem oi
+    JOIN books b ON b.BookID = oi.BookID
+    GROUP BY b.Title, b.Genre
+)
+SELECT *,
+       RANK() OVER (PARTITION BY Genre ORDER BY Revenue DESC) AS GenreRank
+FROM sales;
+
+
+Результат
+  
+
+________________
+
+
+
+
+🔷 Додай у це поле посилання на виконане завдання. 👇
+
+
+
+
+	
+
+🔷 Додай у це поле скрін(и) на виконане завдання. 👇
+
+
+
+
+	
+
+________________
+
+
+
+
+Задача 9. Базові вибірки (просте читання таблиць для перевірки вмісту).
+
+
+-- всі співробітники
+SELECT EmployeeID, Name, Role, Email
+FROM employees;
+
+
+-- всі автори
+SELECT AuthorID, Name, Email, Country
+FROM authors;
+
+
+-- всі книги
+SELECT BookID, Title, Genre, ISBN, PublishYear
+FROM books;
+
+
+Результат
+ Зображення, що містить текст, програмне забезпечення, Комп’ютерна піктограма, число
+
+Вміст на основі ШІ може бути неправильним. 
+   Зображення, що містить текст, програмне забезпечення, Комп’ютерна піктограма, Мультимедійне програмне забезпечення
+
+Вміст на основі ШІ може бути неправильним.   
+________________
+
+
+
+
+🔷 Додай у це поле посилання на виконане завдання. 👇
+
+
+
+
+	
+
+🔷 Додай у це поле скрін(и) на виконане завдання. 👇
+
+
+
+
+	
+
+________________
+
+
+Задача 10. Фільтрація й сортування (типові WHERE + ORDER BY для тематичних підбірок)
+
+
+-- книги певного жанру, від новіших до старіших
+SELECT Title, Genre, PublishYear
+FROM books
+WHERE Genre = 'Technology'
+ORDER BY PublishYear DESC;
+
+
+-- автори з конкретної країни
+SELECT Name, Email
+FROM authors
+WHERE Country = 'Ukraine'
+ORDER BY Name;
+
+
+
+
+Результат
+  
+ Зображення, що містить текст, програмне забезпечення, Комп’ютерна піктограма, Мультимедійне програмне забезпечення
+
+Вміст на основі ШІ може бути неправильним. 
+
+________________
+
+
+
+
+🔷 Додай у це поле посилання на виконане завдання. 👇
+
+
+
+
+	
+
+🔷 Додай у це поле скрін(и) на виконане завдання. 👇
+
+
+
+
+	
+
+________________
+
+
+Задача 11. JOIN: автори ↔ книги (через authorbook) показує головного автора кожної книги
+
+
+-- книги з першим автором (AuthorOrder = 1)
+SELECT b.BookID, b.Title, a.AuthorID, a.Name AS Author
+FROM authorbook ab
+JOIN authors a ON a.AuthorID = ab.AuthorID
+JOIN books   b ON b.BookID   = ab.BookID
+WHERE ab.AuthorOrder = 1
+ORDER BY b.Title;
+
+
+Результат
+ Зображення, що містить текст, програмне забезпечення, число, Комп’ютерна піктограма
+
+Вміст на основі ШІ може бути неправильним. 
+
+________________
+
+
+
+
+🔷 Додай у це поле посилання на виконане завдання. 👇
+
+
+
+
+	
+
+🔷 Додай у це поле скрін(и) на виконане завдання. 👇
+
+
+
+
+	
+
+________________
+________________
+
+
+Задача 12. JOIN: співробітники ↔ книги (через employeebook) «робочі зв’язки» працівників із книжками
+-- хто і що робив по книгах (Task)
+SELECT e.Name  AS Employee,
+       b.Title AS Book,
+       eb.Task
+FROM employeebook eb
+JOIN employees e ON e.EmployeeID = eb.EmployeeID
+JOIN books     b ON b.BookID     = eb.BookID
+ORDER BY e.Name, b.Title;
+
+
+Результат
+ Зображення, що містить текст, програмне забезпечення, число, знімок екрана
+
+Вміст на основі ШІ може бути неправильним. 
+
+________________
+
+
+
+
+🔷 Додай у це поле посилання на виконане завдання. 👇
+
+
+
+
+	
+
+🔷 Додай у це поле скрін(и) на виконане завдання. 👇
+
+
+
+
+	
+
+________________
+
+
+Задача 13. Замовлення з позиціями та сумами («деталізація» та «підсумок» замовлень)
+-- позиції замовлень
+SELECT o.OrderID, o.OrderDate, o.ClientName,
+       b.Title,
+       oi.Quantity, oi.UnitPrice,
+       (oi.Quantity * oi.UnitPrice) AS LineTotal
+FROM orders o
+JOIN orderitem oi ON oi.OrderID = o.OrderID
+JOIN books b      ON b.BookID   = oi.BookID
+ORDER BY o.OrderDate DESC, o.OrderID;
+
+
+-- підсумок по замовленню
+SELECT o.OrderID, o.OrderDate, o.ClientName,
+       SUM(oi.Quantity * oi.UnitPrice) AS OrderTotal
+FROM orders o
+JOIN orderitem oi ON oi.OrderID = o.OrderID
+GROUP BY o.OrderID, o.OrderDate, o.ClientName
+ORDER BY o.OrderDate DESC;
+Результат
+ Зображення, що містить текст, програмне забезпечення, число, ряд
+
+Вміст на основі ШІ може бути неправильним. 
+
+
+
+ Зображення, що містить текст, програмне забезпечення, Комп’ютерна піктограма, знімок екрана
+
+Вміст на основі ШІ може бути неправильним. 
+
+________________
+
+
+
+
+🔷 Додай у це поле посилання на виконане завдання. 👇
+
+
+
+
+	
+
+🔷 Додай у це поле скрін(и) на виконане завдання. 👇
+
+
+
+
+	
+
+________________
+
+
+Задача 14. Агрегації та рейтинги (звіти «скільки книжок» і «які продажі»)
+-- топ-автори за кількістю книжок
+SELECT a.AuthorID, a.Name, COUNT(*) AS BooksCount
+FROM authorbook ab
+JOIN authors a ON a.AuthorID = ab.AuthorID
+GROUP BY a.AuthorID, a.Name
+ORDER BY BooksCount DESC, a.Name;
+
+
+-- продажі за книжками (кількість і сума)
+SELECT b.BookID, b.Title,
+       SUM(oi.Quantity)                         AS QtySold,
+       SUM(oi.Quantity * oi.UnitPrice)          AS Revenue
+FROM orderitem oi
+JOIN books b ON b.BookID = oi.BookID
+GROUP BY b.BookID, b.Title
+ORDER BY Revenue DESC;
+
+
+
+
+
+
+
+
+Результат
+
+
+________________
+
+
+
+
+🔷 Додай у це поле посилання на виконане завдання. 👇
+
+
+
+
+	
+
+🔷 Додай у це поле скрін(и) на виконане завдання. 👇
+
+
+
+
+	
+
+________________
+
+
+Задача 15. HAVING (фільтр по агрегату) фільтр не по рядках, а по Результатах групування
+-- книги з виручкою понад 1000
+SELECT b.Title,
+       SUM(oi.Quantity * oi.UnitPrice) AS Revenue
+FROM orderitem oi
+JOIN books b ON b.BookID = oi.BookID
+GROUP BY b.Title
+HAVING Revenue > 300
+ORDER BY Revenue DESC;
+
+
+Результат
+ Зображення, що містить текст, програмне забезпечення, число, ряд
+
+Вміст на основі ШІ може бути неправильним. 
+  
+
+________________
+
+
+
+
+🔷 Додай у це поле посилання на виконане завдання. 👇
+
+
+
+
+	
+
+🔷 Додай у це поле скрін(и) на виконане завдання. 👇
+
+
+
+
+	
+
+________________
+________________
+
+
+Задача 16. Підзапити та EXISTS (перевірки на наявність/відсутність пов’язаних даних)
+
+
+-- автори, чиї книги не замовляли (аналітичний зріз)
+SELECT a.AuthorID, a.Name
+FROM authors a
+WHERE NOT EXISTS (
+  SELECT 1
+  FROM authorbook ab
+  JOIN orderitem oi ON oi.BookID = ab.BookID
+  WHERE ab.AuthorID = a.AuthorID
+);
+
+
+Результат
+  
+
+________________
+
+
+
+
+🔷 Додай у це поле посилання на виконане завдання. 👇
+
+
+
+
+	
+
+🔷 Додай у це поле скрін(и) на виконане завдання. 👇
+
+
+
+
+	
+
+________________
+
+
+
+
+Задача 17. Дати, статуси, фільтри по періоду («операційні» підбірки за датами/статусами)
+
+
+-- замовлення за період + статус
+SELECT OrderID, OrderDate, ClientName, Status
+FROM orders
+WHERE OrderDate BETWEEN DATE '2025-05-01' AND DATE '2025-05-31'
+  AND Status IN ('New','Completed')   -- фактичні ENUM зі схеми
+ORDER BY OrderDate DESC;
+
+
+Результат
+  
+
+________________
+
+
+
+
+🔷 Додай у це поле посилання на виконане завдання. 👇
+
+
+
+
+	
+
+🔷 Додай у це поле скрін(и) на виконане завдання. 👇
+
+
+
+
+	
+
+________________
+
+
+
+
+Задача 18. Контроль зв’язків авторів та співробітників у контрактах
+
+
+SELECT 
+    c.ContractID,
+    a.Name      AS Author,
+    e.Name      AS Employee,
+    c.ContractType,
+    c.StartDate,
+    c.EndDate
+FROM contracts c
+LEFT JOIN authors   a ON a.AuthorID   = c.AuthorID
+LEFT JOIN employees e ON e.EmployeeID = c.EmployeeID
+ORDER BY c.StartDate DESC, c.ContractID;
+
+
+Результат
+ Зображення, що містить текст, програмне забезпечення, число, Комп’ютерна піктограма
+
+Вміст на основі ШІ може бути неправильним. 
+
+________________
+
+
+
+
+🔷 Додай у це поле посилання на виконане завдання. 👇
+
+
+
+
+	
+
+🔷 Додай у це поле скрін(и) на виконане завдання. 👇
+
+
+
+
+	
+
+________________
+
+
+
+
+Задача 19. Вікна (MySQL 8+): ранжування продажів (Показує місце книги в жанровому рейтингу)
+
+
+-- ранжування книжок за виручкою (в межах жанру)
+WITH sales AS (
+  SELECT b.BookID, b.Title, b.Genre,
+         SUM(oi.Quantity * oi.UnitPrice) AS Revenue
+  FROM orderitem oi
+  JOIN books b ON b.BookID = oi.BookID
+  GROUP BY b.BookID, b.Title, b.Genre
+)
+SELECT *,
+       DENSE_RANK() OVER (PARTITION BY Genre ORDER BY Revenue DESC) AS GenreRank
+FROM sales
+ORDER BY Genre, GenreRank;
+Результат
+  
+
+________________
+
+
+
+
+🔷 Додай у це поле посилання на виконане завдання. 👇
+
+
+
+
+	
+
+🔷 Додай у це поле скрін(и) на виконане завдання. 👇
+
+
+
+
+	
+
+________________
+
+
+
+
+⭐️ Додаткове для завдання самостійного виконання
+
+
+Знайти книги, які мають продажі вище середніх по всіх книгах.
+Визначити автора з найбільшим сумарним доходом від продажів.
+Порахувати кількість замовлень у кожного клієнта.
+Показати активні контракти, де дата завершення EndDate ще не настала.
+Побудувати запит, що показує 5 найпопулярніших жанрів за кількістю проданих екземплярів.
+________________
+
+
+
+
+
+
+🔵Зворотний зв’язок викладача
+
+
+
+
+	________________
+
+
+📝Практична робота до теми 6. «Складні SQL вирази»
+
+
+Мета роботи
+
+
+Закріпити практичні навички використання складних SQL-конструкцій (умов, обмежень, сигналів помилки) для реалізації бізнес-логіки на рівні бази даних.
+Навчитися створювати тригери для перевірки умов вставки та оновлення даних у таблицях.
+
+
+________________
+
+
+Завдання
+
+
+Ознайомитись із принципом побудови складних SQL-виразів, що включають умовні конструкції, перевірки та обробку помилок.
+Розробити тригери для автоматичного контролю бізнес-логіки в таблиці Contracts бази даних “Видавництво”.
+Перевірити роботу створених тригерів на Задачаах коректних і помилкових вставок.
+
+
+
+
+Опис предметної області
+
+
+База даних publishing моделює роботу видавництва.
+Вона містить інформацію про авторів, співробітників, книги, замовлення, а також контракти між видавництвом та учасниками.
+Кожен запис у таблиці Contracts належить або автору, або співробітнику,
+і повинен відповідати правилам:
+      * один власник (AuthorID або EmployeeID, але не обидва);
+      * тип контракту (ContractType) відповідає власнику (Author / Employee);
+      * дати контракту не суперечать одна одній (EndDate ≥ StartDate або NULL). 
+
+
+
+
+Основні положення
+
+
+Тригери (Triggers) — спеціальні процедури, які автоматично виконуються при подіях INSERT, UPDATE або DELETE.
+Тригери можуть перевіряти цілісність даних, фіксувати зміни або зупиняти виконання операції з помилкою (SIGNAL SQLSTATE '45000').
+Тип тригера (BEFORE чи AFTER) визначає момент спрацьовування відносно операції зміни даних.
+Для забезпечення узгодженості даних у таблиці Contracts застосовується два тригери:
+BEFORE INSERT — перевірка нових контрактів;
+BEFORE UPDATE — контроль змін у наявних записах.
+________________
+
+
+
+
+Що зробити
+
+
+      1. Створити тригери trg_contracts_bi та trg_contracts_bu для таблиці Contracts.
+      2. Перевірити роботу тригерів шляхом виконання:
+      * коректної вставки (очікується успішне збереження);
+      * вставки з двома власниками (очікується помилка);
+      * вставки з неправильним типом контракту (очікується помилка);
+      * вставки з некоректними датами (очікується помилка).
+      3. Зробити висновок про переваги використання тригерів для контролю бізнес-правил.
+
+
+
+
+Очікуваний результат
+
+
+Тригери створені й успішно виконують валідацію даних.
+Студенти розуміють, як SQL може автоматично контролювати логіку БД.
+У звіті: код тригерів, скріншоти повідомлень про помилки та Задачаи коректних вставок.
+
+
+________________
+________________
+
+
+
+
+Опис покрокового виконання завдання
+
+
+
+
+Задача 1. Створення тригирів (ексклюзивність власника контракту + контроль дат)
+
+
+USE publishing;
+-- ===============================
+-- Triggers to enforce business rules in MySQL
+-- (ексклюзивність власника контракту + контроль дат)
+-- ===============================
+
+
+DELIMITER $$
+
+
+CREATE TRIGGER trg_contracts_bi
+BEFORE INSERT ON Contracts
+FOR EACH ROW
+BEGIN
+  -- рівно одне з AuthorID/EmployeeID має бути NOT NULL
+  IF (NEW.AuthorID IS NULL AND NEW.EmployeeID IS NULL)
+     OR (NEW.AuthorID IS NOT NULL AND NEW.EmployeeID IS NOT NULL) THEN
+    SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'Exactly one of AuthorID or EmployeeID must be set';
+  END IF;
+
+
+-- ContractType має відповідати встановленому FK
+  IF (NEW.AuthorID IS NOT NULL AND NEW.ContractType <> 'Author')
+     OR (NEW.EmployeeID IS NOT NULL AND NEW.ContractType <> 'Employee') THEN
+    SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'ContractType must match owner (Author/Employee)';
+  END IF;
+
+
+  -- Перевірка дат
+  IF NEW.EndDate IS NOT NULL AND NEW.EndDate < NEW.StartDate THEN
+    SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'EndDate must be >= StartDate';
+  END IF;
+END$$
+
+
+CREATE TRIGGER trg_contracts_bu
+BEFORE UPDATE ON Contracts
+FOR EACH ROW
+BEGIN
+  IF (NEW.AuthorID IS NULL AND NEW.EmployeeID IS NULL)
+     OR (NEW.AuthorID IS NOT NULL AND NEW.EmployeeID IS NOT NULL) THEN
+    SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'Exactly one of AuthorID or EmployeeID must be set';
+  END IF;
+
+
+  IF (NEW.AuthorID IS NOT NULL AND NEW.ContractType <> 'Author')
+     OR (NEW.EmployeeID IS NOT NULL AND NEW.ContractType <> 'Employee') THEN
+    SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'ContractType must match owner (Author/Employee)';
+  END IF;
+
+
+  IF NEW.EndDate IS NOT NULL AND NEW.EndDate < NEW.StartDate THEN
+    SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'EndDate must be >= StartDate';
+  END IF;
+END$$
+
+
+DELIMITER ;
+
+
+Результат
+ Зображення, що містить текст, програмне забезпечення, Комп’ютерна піктограма, Веб-сторінка
+
+Вміст на основі ШІ може бути неправильним. 
+
+________________
+
+
+
+
+🔷 Додай у це поле посилання на виконане завдання. 👇
+
+
+
+
+	
+
+🔷 Додай у це поле скрін(и) на виконане завдання. 👇
+
+
+
+
+	
+
+________________
+________________
+
+
+Задача 2. Створіть тригери BEFORE INSERT і BEFORE UPDATE
+
+
+Створіть створення тригера trg_contracts_bi (BEFORE INSERT) для таблиці Contracts у базі publishing.
+
+
+-- Змінюємо роздільник команд, щоб у тілі тригера можна було використовувати крапку з комою
+DELIMITER $$
+
+
+-- Створюємо тригер, який спрацьовує перед вставкою нового запису у таблицю Contracts
+CREATE TRIGGER trg_contracts_bi
+BEFORE INSERT ON Contracts
+FOR EACH ROW
+BEGIN
+  -----------------------------------------------------------------
+  -- 1️⃣ Перевірка власника контракту
+  -----------------------------------------------------------------
+  -- Контракт повинен належати або автору, або співробітнику, але не обом одночасно.
+  IF (NEW.AuthorID IS NULL AND NEW.EmployeeID IS NULL)
+     OR (NEW.AuthorID IS NOT NULL AND NEW.EmployeeID IS NOT NULL) THEN
+
+
+    -- SIGNAL SQLSTATE '45000' — створює користувацьку помилку (зупиняє виконання INSERT)
+    SIGNAL SQLSTATE '45000'
+      SET MESSAGE_TEXT = 'Exactly one of AuthorID or EmployeeID must be set';
+  END IF;
+
+
+  -----------------------------------------------------------------
+  -- 2️⃣ Перевірка правильності типу контракту
+  -----------------------------------------------------------------
+  -- Якщо контракт належить автору, ContractType має бути "Author".
+  -- Якщо контракт належить співробітнику, ContractType має бути "Employee".
+  IF (NEW.AuthorID IS NOT NULL AND NEW.ContractType <> 'Author')
+     OR (NEW.EmployeeID IS NOT NULL AND NEW.ContractType <> 'Employee') THEN
+
+
+    SIGNAL SQLSTATE '45000'
+      SET MESSAGE_TEXT = 'ContractType must match owner (Author/Employee)';
+  END IF;
+
+
+  -----------------------------------------------------------------
+  -- 3️⃣ Перевірка послідовності дат
+  -----------------------------------------------------------------
+  -- Кінцева дата (EndDate) не може бути раніше дати початку (StartDate).
+  IF NEW.EndDate IS NOT NULL AND NEW.EndDate < NEW.StartDate THEN
+
+
+    SIGNAL SQLSTATE '45000'
+      SET MESSAGE_TEXT = 'EndDate must be >= StartDate';
+  END IF;
+
+
+END$$
+
+
+-- Повертаємо стандартний роздільник команд
+DELIMITER ;
+
+
+Результат
+  
+
+________________
+
+
+
+
+🔷 Додай у це поле посилання на виконане завдання. 👇
+
+
+
+
+	
+
+🔷 Додай у це поле скрін(и) на виконане завдання. 👇
+
+
+
+
+	
+
+________________
+
+
+
+
+Задача 3. Перевірка роботи тригерів
+
+
+-- коректна вставка
+INSERT INTO Contracts (AuthorID, ContractType, StartDate, EndDate)
+VALUES (1, 'Author', '2025-06-01', '2025-12-31');
+
+
+-- помилка 1: два власники
+INSERT INTO Contracts (AuthorID, EmployeeID, ContractType, StartDate)
+VALUES (1, 1, 'Author', '2025-06-01');
+
+
+-- помилка 2: неправильний тип
+INSERT INTO Contracts (AuthorID, ContractType, StartDate)
+VALUES (1, 'Employee', '2025-06-01');
+
+
+-- помилка 3: неправильні дати
+INSERT INTO Contracts (AuthorID, ContractType, StartDate, EndDate)
+VALUES (1, 'Author', '2025-12-01', '2025-01-01');
+________________
+
+
+Результат
+  
+
+
+
+________________
+
+
+
+
+🔷 Додай у це поле посилання на виконане завдання. 👇
+
+
+
+
+	
+
+🔷 Додай у це поле скрін(и) на виконане завдання. 👇
+
+
+
+
+	
+
+________________
+
+
+
+
+Задача 4. Аналітична перевірка
+
+
+Перевірте актуальні контракти:
+
+
+SELECT ContractID, ContractType, StartDate, EndDate
+FROM Contracts
+ORDER BY StartDate DESC;
+
+
+Результат
+  
+
+
+
+________________
+
+
+
+
+🔷 Додай у це поле посилання на виконане завдання. 👇
+
+
+
+
+	
+
+🔷 Додай у це поле скрін(и) на виконане завдання. 👇
+
+
+
+
+	
+
+________________
+
+
+🔵Зворотний зв’язок викладача
+
+
+
+
+	
+
+________________
+📝Практична робота до теми 7. «Вкладені запити. Повторне використання коду»
+
+
+Мета роботи
+
+
+Навчитись використовувати вкладені запити (subqueries) і загальні табличні вирази (CTE) для повторного використання Результатів, аналітики та оптимізації складних вибірок у базі “Видавництво”.
+
+
+________________
+
+
+Завдання
+
+
+Закріпити навички створення вкладених запитів (підзапитів) у SQL.
+Навчитись застосовувати конструкції NOT EXISTS, IN, HAVING, WITH (CTE) та VIEW для аналітичних завдань.
+Реалізувати аналітичні вибірки за даними бази “Видавництво” з повторним використанням коду.
+
+
+
+
+Опис предметної області
+
+
+База даних publishing містить таблиці:
+      * Authors — інформація про авторів;
+      * Books — відомості про книги;
+      * AuthorBook — зв’язок між авторами й книгами;
+      * Orders, OrderItem — замовлення клієнтів і продані книги.
+Аналітика в системі дозволяє визначати авторів без продажів, книги з найвищим доходом, а також створювати проміжні таблиці для повторного використання запитів.
+
+
+
+
+Основні положення
+Вкладений запит (subquery) — запит усередині іншого SQL-запиту, який використовується як фільтр або джерело даних.
+NOT EXISTS перевіряє відсутність записів, пов’язаних із зовнішньою таблицею.
+CTE (Common Table Expression), створюваний через WITH, дозволяє спростити складні аналітичні запити та використовувати Результати повторно.
+VIEW (подання) — збережений віртуальний запит, який можна викликати, як таблицю.
+
+
+
+
+________________
+
+
+Що зробити
+
+
+      1. Створити підзапит для визначення авторів, чиї книги не замовляли
+      2. Скласти вкладений запит для пошуку книг із доходом вище середнього
+      3. Побудувати аналітичний запит із CTE для визначення рейтингу книг у межах жанру.
+      4. Створити VIEW для збереження Результатів підрахунку продажів і використати його в подальших запитах.
+      5. Підготувати короткий висновок щодо переваг вкладених запитів і подань у порівнянні з простими SELECT-виразами.
+
+
+Очікуваний Результат:
+
+
+Виконані Задачаи вкладених запитів, HAVING, CTE і VIEW.
+Студенти розуміють різницю між NOT EXISTS, IN, JOIN, WITH.
+
+
+________________
+
+
+________________
+
+
+
+
+Опис покрокового виконання завдання
+
+
+
+
+Задача 1. Підзапит для визначення авторів, чиї книги не замовляли
+
+
+Повертає авторів, для яких жодна книга не має замовлень.
+Для демонстрації можна додати одного автора з книгою, яку не купували.
+
+
+SELECT a.AuthorID, a.Name
+FROM Authors a
+WHERE NOT EXISTS (
+  SELECT 1
+  FROM AuthorBook ab
+  JOIN OrderItem oi ON oi.BookID = ab.BookID
+  WHERE ab.AuthorID = a.AuthorID
+);
+
+
+Результат
+ Зображення, що містить текст, програмне забезпечення, Комп’ютерна піктограма, Веб-сторінка
+
+Вміст на основі ШІ може бути неправильним. 
+
+
+
+________________
+
+
+
+
+🔷 Додай у це поле посилання на виконане завдання. 👇
+
+
+
+
+	
+
+🔷 Додай у це поле скрін(и) на виконане завдання. 👇
+
+
+
+
+	
+
+________________
+
+
+
+
+Задача 2. Книги з продажами вище середнього
+
+
+порівняти продажі кожної книги із середнім рівнем
+
+
+SELECT b.Title, SUM(oi.Quantity * oi.UnitPrice) AS Revenue
+FROM OrderItem oi
+JOIN Books b ON b.BookID = oi.BookID
+GROUP BY b.Title
+HAVING Revenue > (
+  SELECT AVG(Quantity * UnitPrice) FROM OrderItem
+);
+
+
+________________
+
+
+Результат   
+________________
+
+
+
+
+🔷 Додай у це поле посилання на виконане завдання. 👇
+
+
+
+
+	
+
+🔷 Додай у це поле скрін(и) на виконане завдання. 👇
+
+
+
+
+	
+
+________________
+
+
+
+
+Задача 3. Рейтинг книг у межах жанру (CTE + віконна функція)
+
+
+показати найприбутковіші книги в кожному жанрі
+WITH sales AS (
+  SELECT b.Title, b.Genre, SUM(oi.Quantity * oi.UnitPrice) AS Revenue
+  FROM Books b
+  JOIN OrderItem oi ON oi.BookID = b.BookID
+  GROUP BY b.Title, b.Genre
+)
+SELECT Title, Genre, Revenue,
+       RANK() OVER (PARTITION BY Genre ORDER BY Revenue DESC) AS GenreRank
+FROM sales;
+
+
+Результат
+ Зображення, що містить текст, програмне забезпечення, знімок екрана, Веб-сторінка
+
+Вміст на основі ШІ може бути неправильним. 
+
+________________
+
+
+
+
+🔷 Додай у це поле посилання на виконане завдання. 👇
+
+
+
+
+	
+
+🔷 Додай у це поле скрін(и) на виконане завдання. 👇
+
+
+
+
+	
+
+________________
+
+
+
+
+Задача 4. Повторне використання коду
+
+
+Створити тимчасове подання (VIEW) для часто використовуваного аналітичного запиту.
+
+
+CREATE OR REPLACE VIEW v_book_sales AS
+SELECT b.BookID, b.Title, SUM(oi.Quantity * oi.UnitPrice) AS Revenue
+FROM Books b
+LEFT JOIN OrderItem oi ON oi.BookID = b.BookID
+GROUP BY b.BookID, b.Title;
+
+
+Потім:
+
+
+SELECT * FROM v_book_sales ORDER BY Revenue DESC;
+
+
+Результат
+ Зображення, що містить текст, програмне забезпечення, знімок екрана, Комп’ютерна піктограма
+
+Вміст на основі ШІ може бути неправильним. 
+
+
+
+________________
+
+
+
+
+
+
+🔷 Додай у це поле посилання на виконане завдання. 👇
+
+
+
+
+	
+
+🔷 Додай у це поле скрін(и) на виконане завдання. 👇
+
+
+
+
+	
+
+________________
+
+
+
+
+🔵Зворотний зв’язок викладача
+
+
+
+
+	
+
+________________
+
+
+
+📝Практична робота до теми 8. «Додаткові вбудовані SQL функції»
+
+
+Мета роботи
+
+
+Навчитися застосовувати вбудовані SQL-функції різних типів (агрегатні, рядкові, числові, часові, логічні) для аналізу, перевірки та представлення даних у базі «Видавництво».
+
+
+________________
+
+
+Завдання
+
+
+Ознайомитися з різновидами вбудованих SQL-функцій, які дозволяють виконувати розрахунки, маніпулювати текстом, датами та числовими значеннями.
+Навчитися застосовувати функції до даних бази publishing для отримання аналітичних звітів і форматованих Результатів.
+Закріпити розуміння групових, математичних, текстових та часових функцій у запитах.
+
+
+
+
+Опис предметної області
+
+
+База даних publishing містить інформацію про авторів, співробітників, книги, контракти та замовлення.
+У процесі роботи видавництва виникає потреба:
+      * формувати короткі звіти з форматованими датами й текстами;
+      * виконувати обчислення середніх, мінімальних та максимальних значень;
+      * створювати статистику продажів по місяцях, клієнтах і жанрах;
+      * перевіряти довжину рядків, електронні адреси та ідентифікаційні коди..
+
+
+
+
+Основні положення
+
+
+Вбудовані SQL-функції поділяються на кілька основних груп:
+
+
+Тип функцій
+	Задачаи
+	Призначення
+	Агрегатні
+	SUM(), AVG(), COUNT(), MIN(), MAX()
+	Підрахунок, середні, крайні значення
+	Текстові (рядкові)
+	CONCAT(), SUBSTRING(), UPPER(), LOWER(), LENGTH()
+	Обробка тексту
+	Числові
+	ROUND(), CEIL(), FLOOR(), MOD()
+	Математичні операції
+	Часові (дата/час)
+	YEAR(), MONTH(), DAY(), DATEDIFF(), CURDATE()
+	Робота з датами
+	Логічні/умовні
+	IF(), CASE WHEN ... THEN ... END
+	Формування умовних Результатів
+	Службові
+	COALESCE(), IFNULL(), NULLIF()
+	Робота з NULL-значеннями
+	
+
+________________
+
+
+Що зробити
+
+
+      1. Створити набір запитів із використанням різних вбудованих функцій.
+      2. Для кожного запиту вивести Задача вхідних даних і Результат виконання.
+      3. Продемонструвати практичне застосування функцій у реальних завданнях видавництва (форматування звітів, аналітика, перевірка даних).
+      4. Підготувати короткий звіт із Результатами виконання запитів.
+
+
+Очікуваний Результат
+
+
+Виконані Задачаи вкладених запитів, HAVING, CTE і VIEW.
+Студенти розуміють різницю між NOT EXISTS, IN, JOIN, WITH.
+
+
+________________
+
+
+
+
+Опис покрокового виконання завдання
+
+
+
+
+Задача 1. Робота з текстовими функціями
+
+
+-- Повне ім’я автора у верхньому регістрі
+SELECT UPPER(Name) AS AuthorNameUpper
+FROM Authors;
+
+
+-- Формування електронного підпису працівника: "Ім’я <email>"
+SELECT CONCAT(Name, ' <', Email, '>') AS Signature
+FROM Employees;
+
+
+-- Пошук співробітників, чий email містить домен 'pub.ch'
+SELECT Name, Email
+FROM Employees
+WHERE Email LIKE '%pub.ch%';
+
+
+-- Визначення довжини назви книги
+SELECT Title, LENGTH(Title) AS TitleLength
+FROM Books;
+
+
+________________
+
+
+Результат
+  
+      
+ Зображення, що містить текст, програмне забезпечення, знімок екрана, Комп’ютерна піктограма
+
+Вміст на основі ШІ може бути неправильним. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+________________
+
+
+
+
+🔷 Додай у це поле посилання на виконане завдання. 👇
+
+
+
+
+	
+
+🔷 Додай у це поле скрін(и) на виконане завдання. 👇
+
+
+
+
+	
+
+________________
+
+
+
+
+Задача 2. Робота з числовими функціями
+
+
+-- Розрахунок загального доходу по кожному замовленню
+SELECT OrderID, ROUND(SUM(Quantity * UnitPrice), 2) AS TotalRevenue
+FROM OrderItem
+GROUP BY OrderID;
+
+
+-- Оцінка середньої ціни книги у продажах
+SELECT ROUND(AVG(UnitPrice), 2) AS AvgBookPrice
+FROM OrderItem;
+
+
+-- Визначення, які позиції замовлень мають непарну кількість
+SELECT OrderItemID, Quantity, MOD(Quantity, 2) AS IsOdd
+FROM OrderItem;
+
+
+________________
+
+
+Результат
+ Зображення, що містить текст, програмне забезпечення, знімок екрана, Комп’ютерна піктограма
+
+Вміст на основі ШІ може бути неправильним. 
+  
+ Зображення, що містить текст, програмне забезпечення, знімок екрана, Комп’ютерна піктограма
+
+Вміст на основі ШІ може бути неправильним. 
+
+
+
+
+
+ Зображення, що містить текст, знімок екрана, програмне забезпечення, Комп’ютерна піктограма
+
+Вміст на основі ШІ може бути неправильним. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+________________
+
+
+
+
+🔷 Додай у це поле посилання на виконане завдання. 👇
+
+
+
+
+	
+
+🔷 Додай у це поле скрін(и) на виконане завдання. 👇
+
+
+
+
+	
+
+________________
+
+
+
+
+Задача 3. Робота з часовими функціями
+
+
+-- Поточна дата
+SELECT CURDATE() AS Today;
+
+
+-- Замовлення, які зроблено більше ніж 100 днів тому
+SELECT OrderID, OrderDate, DATEDIFF(CURDATE(), OrderDate) AS DaysAgo
+FROM Orders
+WHERE DATEDIFF(CURDATE(), OrderDate) > 100;
+
+
+-- Рік і місяць створення контракту
+SELECT ContractID, YEAR(StartDate) AS YearStart, MONTH(StartDate) AS MonthStart
+FROM Contracts;
+
+
+
+
+________________
+
+
+Результат
+ Зображення, що містить текст, програмне забезпечення, знімок екрана, Комп’ютерна піктограма
+
+Вміст на основі ШІ може бути неправильним. 
+ 
+ 
+  
+ Зображення, що містить текст, програмне забезпечення, знімок екрана, Комп’ютерна піктограма
+
+Вміст на основі ШІ може бути неправильним. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+________________
+
+
+
+
+🔷 Додай у це поле посилання на виконане завдання. 👇
+
+
+
+
+	
+
+🔷 Додай у це поле скрін(и) на виконане завдання. 👇
+
+
+
+
+	
+
+________________
+
+
+
+
+Задача 4. Логічні та умовні функції
+
+
+-- Визначити статус контракту
+SELECT ContractID,
+       IF(EndDate IS NULL, 'Active', 'Closed') AS ContractStatus
+FROM Contracts;
+
+
+-- Категоризація книг за роком видання
+SELECT Title, PublishYear,
+       CASE
+         WHEN PublishYear >= 2025 THEN 'Нові видання'
+         WHEN PublishYear BETWEEN 2020 AND 2024 THEN 'Сучасні'
+         ELSE 'Архів'
+       END AS Category
+FROM Books;
+
+
+________________
+
+
+Результат
+ Зображення, що містить текст, програмне забезпечення, знімок екрана, Комп’ютерна піктограма
+
+Вміст на основі ШІ може бути неправильним. 
+   
+
+
+________________
+
+
+
+
+🔷 Додай у це поле посилання на виконане завдання. 👇
+
+
+
+
+	
+
+🔷 Додай у це поле скрін(и) на виконане завдання. 👇
+
+
+
+
+	
+
+________________
+
+
+
+
+Задача 5. Службові функції
+
+
+-- Заміна NULL значень
+SELECT Name, IFNULL(Phone, '— не вказано —') AS PhoneDisplay
+FROM Authors;
+
+
+-- Порівняння даних
+SELECT Name, Email,
+       IF(Email LIKE '%@%', 'Valid email', 'Invalid email') AS CheckEmail
+FROM Employees;
+
+
+
+
+  
+ Зображення, що містить текст, програмне забезпечення, знімок екрана, Комп’ютерна піктограма
+
+Вміст на основі ШІ може бути неправильним. 
+
+
+
+________________
+
+
+
+
+🔷 Додай у це поле посилання на виконане завдання. 👇
+
+
+
+
+	
+
+🔷 Додай у це поле скрін(и) на виконане завдання. 👇
+
+
+
+
+	
+
+________________
+
+
+
+
+🔵Зворотний зв’язок викладача
+
+
+
+
+	________________
+
+
+
+
+📝Практична робота до теми 9. «Обробка та візуалізація даних засобами Python» 
+
+Мета роботи
+
+
+Навчитися будувати міні-ETL на Python: отримання даних із БД «Видавництво», очищення та перетворення у pandas, розрахунок аналітичних метрик і побудова графіків у matplotlib, збереження Результатів у CSV/PNG.
+________________
+
+
+
+
+Завдання
+
+
+Імпортувати дані з MySQL (схема publishing) у pandas.
+Виконати базове очищення й контроль якості даних.
+Розрахувати ключові показники продажів та активності.
+Побудувати 3–4 інформативні графіки.
+Зберегти Результати (CSV + зображення графіків).
+
+
+
+
+Опис предметної області
+
+
+База «Видавництво» містить таблиці: Authors, Books, Orders, OrderItem, а також зв’язкові AuthorBook, EmployeeBook. Аналітика ґрунтується на продажах книг (кількість та виручка) в розрізі дат, жанрів, назв і клієнтів.
+
+
+
+
+Основні положення
+
+
+Бібліотеки: pandas (обробка), matplotlib (візуалізація), sqlalchemy або mysqlclient (доступ до MySQL).
+Типові кроки: Read → Clean → Transform → Analyze → Visualize → Save.
+Уніфіковані артефакти: data/raw/, data/processed/, figs/.
+
+
+________________
+
+
+
+
+Що зробити
+
+
+      1. Встановити: pip install pandas sqlalchemy pymysql matplotlib.
+      2. Мати доступ до БД MySQL publishing (локальна або віддалена).
+      3. Створити структуру папок: data/raw, data/processed, figs.
+
+
+
+
+Очікуваний результат
+
+
+Після виконання роботи студент повинен уміти підключати Python до бази даних, імпортувати таблиці в pandas, виконувати базову обробку даних (фільтрація, групування, агрегація), будувати графіки в matplotlib та зберігати Результати у форматах CSV і PNG.
+
+Очікується сформований набір даних із розрахованими показниками та кілька візуалізацій (топ-жанри, динаміка виручки, heatmap жанрів і років).
+________________
+
+
+________________
+
+
+
+
+Підключення Python до бази MySQL і виконання коду
+
+
+1. Встановлення Python
+      1. Завантажити останню версію Python із https://www.python.org/downloads/.
+      2. Під час встановлення обов’язково поставити галочку “Add Python to PATH”.
+      3. Перевірити встановлення:
+      4. python --version
+(або py --version у Windows)
+
+
+2. Встановлення бібліотек
+Відкрити термінал або командний рядок (cmd) і встановити необхідні бібліотеки:
+pip install pandas sqlalchemy pymysql matplotlib
+💡 Якщо використовується Anaconda або VS Code, можна виконати це в Terminal прямо в IDE.
+
+
+3. Підготовка бази даних MySQL
+      1. Запустити MySQL Workbench або XAMPP.
+      2. Переконатися, що база publishing уже створена.
+      3. Переконатися, що тестові дані введені.
+Перевірка:
+USE publishing;
+SHOW TABLES;
+SELECT COUNT(*) FROM books;
+
+
+4. Підключення Python до MySQL
+У Python створюємо файл, наЗадача connect_publishing.py.
+
+
+Відкрийте середовище для роботи з Python
+Можна використовувати:
+      * Visual Studio Code
+      * PyCharm Community
+      * або навіть IDLE (установлюється разом із Python).
+
+
+Створіть новий файл
+У VS Code або PyCharm:
+      * Натисніть File → New File
+      * Збережіть його як
+      * connect_publishing.py
+(назва без пробілів, розширення .py обов’язкове)
+
+
+Введіть код підключення до бази даних
+
+
+from sqlalchemy import create_engine
+
+
+# створюємо з’єднання з базою MySQL
+# замініть user, password та port на власні параметри
+
+
+from sqlalchemy import create_engine, text
+
+
+engine = create_engine("mysql+pymysql://root:ТВІЙ_ПАРОЛЬ@localhost:3306/publishing?charset=utf8mb4")
+
+
+with engine.connect() as conn:
+    res = conn.execute(text("SELECT NOW()"))
+    print("OK:", res.scalar())  # або list(res)
+
+
+Збережіть файл (Ctrl + S)
+Переконайтесь, що він лежить у зручній папці (наЗадача C:\python_projects\publishing або Documents\Python).
+
+
+Запустіть файл
+Відкрийте термінал або командний рядок у тій самій папці та введіть:
+python connect_publishing.py
+або у VS Code натисніть кнопку ▶ Run Python File.
+
+
+Перевірте Результат
+Якщо все зроблено правильно, отримаєте вивід на кшталт:
+OK: Поточна дата MySQL: OK: 2025-11-07 08:17:19]
+________________
+
+
+
+
+💡 Пояснення:
+      * create_engine() — створює «двигун» з’єднання з базою даних.
+      * with engine.connect() — відкриває безпечне з’єднання, яке автоматично закривається.
+      * SELECT NOW(); — тестовий запит, який повертає поточну дату сервера MySQL.
+
+
+________________
+
+
+Опис покрокового виконання завдання
+
+
+Задача 1. Імпорт таблиць у pandas
+
+
+      1. Відкрий свій файл connect_publishing.py і додай наприкінці (після того, як створюєш engine) ось цей блок коду:
+
+
+import pandas as pd
+
+
+books = pd.read_sql("SELECT * FROM Books", engine)
+orders = pd.read_sql("SELECT * FROM Orders", engine)
+orderitem = pd.read_sql("SELECT * FROM OrderItem", engine)
+
+
+print("Книги:", books.shape)
+print("Замовлення:", orders.shape)
+print("Позиції замовлень:", orderitem.shape)
+
+
+
+
+      2. Збережи файл
+
+
+Натисни Ctrl + S у Visual Studio або будь-якому редакторі, у якому ти працюєш.
+
+
+      3. Запусти знову через CMD
+python connect_publishing.py
+
+
+Якщо все гаразд, ти побачиш щось подібне:
+Книги: (10, 5)
+Замовлення: (3, 4)
+Позиції замовлень: (6, 5)
+(цифри залежать від кількості записів у таблицях)
+
+
+Результат
+  
+
+
+
+________________
+
+
+
+
+🔷 Додай у це поле посилання на виконане завдання. 👇
+
+
+
+
+	
+
+🔷 Додай у це поле скрін(и) на виконане завдання. 👇
+
+
+
+
+	
+
+________________
+
+
+
+
+
+
+Задача 2. Об'єднання таблиць
+(щоб створити одну аналітичну таблицю)
+
+
+На початку коду (перед створенням df) треба обов’язково імпортувати таблиці з бази.
+
+
+import pandas as pd
+
+
+books = pd.read_sql("SELECT * FROM Books", engine)
+orders = pd.read_sql("SELECT * FROM Orders", engine)
+orderitem = pd.read_sql("SELECT * FROM OrderItem", engine)
+
+
+Після цього вже створюй свою аналітичну таблицю:
+
+
+df = (orderitem
+      .merge(orders, on='OrderID', how='left')
+      .merge(books, on='BookID', how='left'))
+
+
+df['Revenue'] = df['Quantity'] * df['UnitPrice']
+print(df.head())
+
+
+Тепер df — повна таблиця замовлень із назвами книг, клієнтами, кількістю і виручкою.
+
+
+Збережемо Результати у CSV
+
+
+df.to_csv('sales_data.csv', index=False, encoding='utf-8')
+print("Файл збережено: sales_data.csv")
+
+
+
+
+________________
+
+
+Результат
+  
+
+________________
+
+
+
+
+🔷 Додай у це поле посилання на виконане завдання. 👇
+
+
+
+
+	
+
+🔷 Додай у це поле скрін(и) на виконане завдання. 👇
+
+
+
+
+	
+
+________________
+
+
+
+
+Задача 3. Побудова простого графіка
+
+
+from sqlalchemy import create_engine, text
+import pandas as pd
+import matplotlib.pyplot as plt
+
+
+# 1️⃣ Підключення до бази
+engine = create_engine("mysql+pymysql://root: ТВІЙ_ПАРОЛЬ@localhost:3306/publishing?charset=utf8mb4")
+
+
+with engine.connect() as conn:
+    res = conn.execute(text("SELECT NOW()"))
+    print("OK:", res.scalar())
+
+
+# 2️⃣ Імпорт таблиць із бази
+books = pd.read_sql("SELECT * FROM Books", engine)
+orders = pd.read_sql("SELECT * FROM Orders", engine)
+orderitem = pd.read_sql("SELECT * FROM OrderItem", engine)
+
+
+print("Книги:", books.shape)
+print("Замовлення:", orders.shape)
+print("Позиції замовлень:", orderitem.shape)
+
+
+# 3️⃣ Створення аналітичної таблиці
+df = (orderitem
+      .merge(orders, on='OrderID', how='left')
+      .merge(books, on='BookID', how='left'))
+
+
+df['Revenue'] = df['Quantity'] * df['UnitPrice']
+print(df.head())
+
+
+# 4️⃣ Збереження у файл
+df.to_csv("sales_data.csv", index=False)
+print("Файл збережено: sales_data.csv")
+
+
+# 5️⃣ Побудова графіка: дохід по книгах
+top_books = (df.groupby("Title")["Revenue"]
+               .sum()
+               .sort_values(ascending=False)
+               .reset_index())
+
+
+plt.figure(figsize=(8,5))
+plt.bar(top_books["Title"], top_books["Revenue"], color="skyblue")
+plt.title("Дохід по книгах", fontsize=14)
+plt.xlabel("Назва книги")
+plt.ylabel("Дохід (CHF)")
+plt.xticks(rotation=30, ha='right')
+plt.tight_layout()
+plt.show()
+
+
+У вікні з’явиться графік — бар-чарт із назвами книг.
+
+
+Результат
+  
+
+  
+
+________________
+
+
+
+
+🔷 Додай у це поле посилання на виконане завдання. 👇
+
+
+
+
+	
+
+🔷 Додай у це поле скрін(и) на виконане завдання. 👇
+
+
+
+
+	
+
+________________
+
+
+
+
+Задача 4. Побудова графіка динаміки продажів
+
+
+# === 1. Підключення до бази MySQL ===
+from sqlalchemy import create_engine, text
+import pandas as pd
+import matplotlib.pyplot as plt
+
+
+# ⚙️ заміни пароль на свій
+engine = create_engine("mysql+pymysql://root: ТВІЙ_ПАРОЛЬ@localhost:3306/publishing?charset=utf8mb4")
+
+
+# Перевірка підключення
+with engine.connect() as conn:
+    print("OK:", conn.execute(text("SELECT NOW()")).scalar())
+
+
+# === 2. Завантаження таблиць із бази ===
+books = pd.read_sql("SELECT * FROM Books", engine)
+orders = pd.read_sql("SELECT * FROM Orders", engine)
+orderitem = pd.read_sql("SELECT * FROM OrderItem", engine)
+
+
+# === 3. Створення аналітичної таблиці df ===
+df = (orderitem
+      .merge(orders, on='OrderID', how='left')
+      .merge(books, on='BookID', how='left'))
+
+
+df["Revenue"] = df["Quantity"] * df["UnitPrice"]
+df["OrderDate"] = pd.to_datetime(df["OrderDate"])  # перетворення у формат дати
+
+
+print(df.head())
+
+
+# === 4. Групування по датах ===
+sales_by_date = (df.groupby("OrderDate")["Revenue"]
+                   .sum()
+                   .reset_index()
+                   .sort_values("OrderDate"))
+
+
+print(sales_by_date)
+
+
+# === 5. Побудова графіка ===
+plt.figure(figsize=(8,5))
+plt.plot(sales_by_date["OrderDate"], sales_by_date["Revenue"], marker="o", color="teal", linewidth=2)
+plt.title("Динаміка продажів за датами", fontsize=14)
+plt.xlabel("Дата замовлення")
+plt.ylabel("Виручка (CHF)")
+plt.grid(True, linestyle="--", alpha=0.6)
+plt.tight_layout()
+plt.show()
+
+
+# === 6. Збереження графіка ===
+plt.savefig('revenue_by_month.png', dpi=200)
+print("Графік збережено: revenue_by_month.png")
+
+
+Результат
+ Зображення, що містить текст, знімок екрана, монітор, програмне забезпечення
+
+Вміст на основі ШІ може бути неправильним. 
+
+
+
+ Зображення, що містить текст, Графік, ряд, знімок екрана
+
+Вміст на основі ШІ може бути неправильним. 
+
+
+
+________________
+
+
+
+
+Типові помилки та поради
+Помилка
+	Причина
+	Як виправити
+	ModuleNotFoundError: No module named 'pymysql'
+	Не встановлена бібліотека
+	Виконай pip install pymysql
+	Access denied for user 'root'@'localhost'
+	Невірний пароль або порт
+	Перевір create_engine() рядок
+	ProgrammingError: (pymysql.err.ProgrammingError)
+	Таблиця або база не знайдена
+	Виконай USE publishing; у MySQL
+	UnicodeEncodeError
+	Некоректна кодування
+	Додай ?charset=utf8mb4 у підключення
+	Графік не з’являється
+	IDE не підтримує інтерактивні графіки
+	Використай plt.show() або VS Code / Jupyter
+	
+
+________________
+
+
+
+
+🔷 Додай у це поле посилання на виконане завдання. 👇
+
+
+
+
+	
+
+🔷 Додай у це поле скрін(и) на виконане завдання. 👇
+
+
+
+
+	
+
+________________
+
+
+
+
+Задача 5. Ключові показники (KPI)
+
+
+# === 1. Імпорт бібліотек ===
+from sqlalchemy import create_engine, text
+import pandas as pd
+import matplotlib.pyplot as plt
+
+
+# === 2. Підключення до бази MySQL ===
+# ⚙️ Заміни root:ТВІЙ_ПАРОЛЬ на свій логін і пароль MySQL
+engine = create_engine("mysql+pymysql://root:ТВІЙ_ПАРОЛЬ@localhost:3306/publishing?charset=utf8mb4")
+
+
+# Перевіряємо, що підключення працює
+with engine.connect() as conn:
+    result = conn.execute(text("SELECT NOW();"))
+    print("Підключення успішне! Поточна дата MySQL:", result.scalar())
+
+
+# === 3. Завантаження таблиць у pandas ===
+books = pd.read_sql("SELECT * FROM Books", engine)
+orders = pd.read_sql("SELECT * FROM Orders", engine)
+orderitem = pd.read_sql("SELECT * FROM OrderItem", engine)
+
+
+print(f"Книги: {books.shape}, Замовлення: {orders.shape}, Позиції замовлень: {orderitem.shape}")
+
+
+# === 4. Створення аналітичної таблиці df ===
+df = (orderitem
+      .merge(orders, on='OrderID', how='left')
+      .merge(books, on='BookID', how='left'))
+
+
+# додаємо нову колонку «Виручка»
+df["Revenue"] = df["Quantity"] * df["UnitPrice"]
+df["OrderDate"] = pd.to_datetime(df["OrderDate"])
+
+
+print("\nПерші рядки аналітичної таблиці:")
+print(df.head())
+
+
+# === 5. Розрахунок ключових показників (KPI) ===
+kpi = {
+    "total_orders": df["OrderID"].nunique(),                     # кількість замовлень
+    "total_units": int(df["Quantity"].sum()),                    # кількість проданих книг
+    "total_revenue": float(df["Revenue"].sum()),                 # загальна виручка
+    "avg_order_value": float(df.groupby("OrderID")["Revenue"].sum().mean())  # середній чек
+}
+
+
+# Перетворюємо у таблицю pandas і зберігаємо
+kpi_series = pd.Series(kpi, name="Value")
+kpi_series.to_csv("kpi.csv")
+
+
+print("\nKPI (ключові показники):")
+print(kpi_series)
+
+
+# === 6. Побудова графіка динаміки продажів ===
+sales_by_date = (df.groupby("OrderDate")["Revenue"]
+                   .sum()
+                   .reset_index()
+                   .sort_values("OrderDate"))
+
+
+plt.figure(figsize=(8,5))
+plt.plot(sales_by_date["OrderDate"], sales_by_date["Revenue"],
+         marker="o", color="teal", linewidth=2)
+plt.title("Динаміка продажів за датами", fontsize=14)
+plt.xlabel("Дата замовлення")
+plt.ylabel("Виручка (CHF)")
+plt.grid(True, linestyle="--", alpha=0.6)
+plt.tight_layout()
+plt.show()
+
+
+
+
+Результат
+  
+
+________________
+
+
+
+
+🔷 Додай у це поле посилання на виконане завдання. 👇
+
+
+
+
+	
+
+🔷 Додай у це поле скрін(и) на виконане завдання. 👇
+
+
+
+
+	
+
+________________
+
+
+
+
+Задача 6. Топ-жанри за виручкою (стовпчикова діаграма)
+
+
+# === 1. Імпорт бібліотек ===
+from sqlalchemy import create_engine, text
+import pandas as pd
+import matplotlib.pyplot as plt
+
+
+# === 2. Підключення до бази MySQL ===
+# ⚙️ Вкажи свій пароль після root:
+engine = create_engine("mysql+pymysql://root:ТВІЙ_ПАРОЛЬ@localhost:3306/publishing?charset=utf8mb4")
+
+
+# Перевірка з'єднання
+with engine.connect() as conn:
+    print("Підключення успішне:", conn.execute(text("SELECT NOW()")).scalar())
+
+
+# === 3. Завантаження таблиць із бази ===
+books = pd.read_sql("SELECT * FROM Books", engine)
+orders = pd.read_sql("SELECT * FROM Orders", engine)
+orderitem = pd.read_sql("SELECT * FROM OrderItem", engine)
+
+
+print(f"Таблиці завантажено: Books={books.shape}, Orders={orders.shape}, OrderItem={orderitem.shape}")
+
+
+# === 4. Об’єднання таблиць для аналітики ===
+df = (orderitem
+      .merge(orders, on='OrderID', how='left')
+      .merge(books, on='BookID', how='left'))
+
+
+# Розрахунок виручки
+df["Revenue"] = df["Quantity"] * df["UnitPrice"]
+
+
+print("\nПерші рядки аналітичної таблиці:")
+print(df.head())
+
+
+# === 5. Аналіз топ-жанрів ===
+# групуємо дані за жанром і підраховуємо суму виручки
+genre_revenue = (df.groupby("Genre")["Revenue"]
+                   .sum()
+                   .sort_values(ascending=False)
+                   .reset_index())
+
+
+print("\nТоп жанри за виручкою:")
+print(genre_revenue)
+
+
+# === 6. Побудова стовпчикової діаграми ===
+plt.figure(figsize=(8,5))
+plt.barh(genre_revenue["Genre"], genre_revenue["Revenue"], color="cornflowerblue")
+plt.title("Топ-жанри за виручкою", fontsize=14)
+plt.xlabel("Виручка (CHF)")
+plt.ylabel("Жанр")
+plt.gca().invert_yaxis()  # щоб найбільші жанри були зверху
+plt.grid(axis='x', linestyle="--", alpha=0.6)
+plt.tight_layout()
+plt.show()
+
+
+# === 7. Збереження Результату у CSV ===
+genre_revenue.to_csv("genre_revenue.csv", index=False)
+print("\nРезультат збережено у файл genre_revenue.csv")
+
+
+Результат
+ Зображення, що містить текст, знімок екрана, монітор, програмне забезпечення
+
+Вміст на основі ШІ може бути неправильним. 
+
+ Зображення, що містить текст, знімок екрана, монітор, число
+
+Вміст на основі ШІ може бути неправильним. 
+
+
+
+Пояснення графіка
+
+
+Вісь Y (вертикальна) — назви жанрів.
+Вісь X (горизонтальна) — сума доходу по кожному жанру.
+Найдовша смуга = найприбутковіший жанр.
+Найзручніше — горизонтальний формат, бо довгі назви не перекриваються.
+
+
+________________
+
+
+
+
+🔷 Додай у це поле посилання на виконане завдання. 👇
+
+
+
+
+	
+
+🔷 Додай у це поле скрін(и) на виконане завдання. 👇
+
+
+
+
+	
+
+________________
+
+
+
+
+
+
+Задача 7. Топ-книги (Pareto 80/20)
+
+
+Правило Парето — це саме те, що люблять бачити на аналітичних діаграмах: 20% книг приносять 80% доходу.
+
+
+# === 1. Імпорт бібліотек ===
+from sqlalchemy import create_engine, text
+import pandas as pd
+import matplotlib.pyplot as plt
+
+
+# === 2. Підключення до бази MySQL ===
+# ⚙️ Замініть пароль на свій
+engine = create_engine("mysql+pymysql://root:ТВІЙ_ПАРОЛЬ@localhost:3306/publishing?charset=utf8mb4")
+
+
+# Перевірка підключення
+with engine.connect() as conn:
+    print("Підключення успішне:", conn.execute(text("SELECT NOW()")).scalar())
+
+
+# === 3. Завантаження таблиць ===
+books = pd.read_sql("SELECT * FROM Books", engine)
+orders = pd.read_sql("SELECT * FROM Orders", engine)
+orderitem = pd.read_sql("SELECT * FROM OrderItem", engine)
+
+
+print(f"Таблиці завантажено: Books={books.shape}, Orders={orders.shape}, OrderItem={orderitem.shape}")
+
+
+# === 4. Формуємо аналітичну таблицю ===
+df = (orderitem
+      .merge(orders, on='OrderID', how='left')
+      .merge(books, on='BookID', how='left'))
+
+
+df["Revenue"] = df["Quantity"] * df["UnitPrice"]
+
+
+print("\nПерші рядки аналітичної таблиці:")
+print(df.head())
+
+
+# === 5. Аналіз топ-книг ===
+book_revenue = (df.groupby("Title")["Revenue"]
+                  .sum()
+                  .sort_values(ascending=False)
+                  .reset_index())
+
+
+# Обчислюємо накопичувальний відсоток
+book_revenue["CumulativeRevenue"] = book_revenue["Revenue"].cumsum()
+book_revenue["CumulativePercent"] = 100 * book_revenue["CumulativeRevenue"] / book_revenue["Revenue"].sum()
+
+
+print("\nТоп-книги з накопичувальним % доходу:")
+print(book_revenue)
+
+
+# === 6. Побудова графіка Pareto (80/20) ===
+fig, ax1 = plt.subplots(figsize=(8,5))
+
+
+# Стовпчики — виручка по книгах
+ax1.bar(book_revenue["Title"], book_revenue["Revenue"], color="skyblue")
+ax1.set_xlabel("Назва книги")
+ax1.set_ylabel("Виручка (CHF)", color="navy")
+
+
+# Лінія — накопичувальний відсоток доходу
+ax2 = ax1.twinx()
+ax2.plot(book_revenue["Title"], book_revenue["CumulativePercent"], color="orange", marker="o")
+ax2.set_ylabel("Накопичувальний відсоток доходу (%)", color="darkorange")
+ax2.axhline(80, color="red", linestyle="--", linewidth=1.5, label="80% межа")
+
+
+# Оформлення
+plt.title("Аналіз топ-книг (Pareto 80/20)", fontsize=14)
+ax1.tick_params(axis='x', rotation=30, labelsize=9)
+ax1.grid(axis='y', linestyle="--", alpha=0.6)
+plt.tight_layout()
+plt.show()
+
+
+# === 7. Збереження Результату ===
+book_revenue.to_csv("book_pareto.csv", index=False)
+print("\nРезультати збережено у файл book_pareto.csv")
+
+
+Результат
+  
+
+  
+
+
+
+________________
+
+
+
+
+🔷 Додай у це поле посилання на виконане завдання. 👇
+
+
+
+
+	
+
+🔷 Додай у це поле скрін(и) на виконане завдання. 👇
+
+
+
+
+	
+
+________________
+
+
+
+
+Задача 8. Heatmap «жанр × рік видання» (агрегація)
+
+
+Візуалізувати, як змінювалась виручка різних жанрів за роками публікації книг.
+Теплова карта покаже, у які роки конкретний жанр був найбільш прибутковим.
+
+
+# === 1. Імпорт бібліотек ===
+from sqlalchemy import create_engine, text
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns  # для heatmap
+
+
+# === 2. Підключення до бази MySQL ===
+engine = create_engine("mysql+pymysql://root:ТВІЙ_ПАРОЛЬ@localhost:3306/publishing?charset=utf8mb4")
+
+
+# Перевірка підключення
+with engine.connect() as conn:
+    print("Підключення успішне:", conn.execute(text("SELECT NOW()")).scalar())
+
+
+# === 3. Завантаження таблиць ===
+books = pd.read_sql("SELECT * FROM Books", engine)
+orders = pd.read_sql("SELECT * FROM Orders", engine)
+orderitem = pd.read_sql("SELECT * FROM OrderItem", engine)
+
+
+print(f"Завантажено: Books={books.shape}, Orders={orders.shape}, OrderItem={orderitem.shape}")
+
+
+# === 4. Формуємо аналітичну таблицю ===
+df = (orderitem
+      .merge(orders, on="OrderID", how="left")
+      .merge(books, on="BookID", how="left"))
+
+
+df["Revenue"] = df["Quantity"] * df["UnitPrice"]
+
+
+print("\nПерші рядки об’єднаної таблиці:")
+print(df.head())
+
+
+# === 5. Агрегація за жанром і роком видання ===
+pivot = (df.groupby(["Genre", "PublishYear"])["Revenue"]
+           .sum()
+           .unstack(fill_value=0))
+
+
+print("\nЗведена таблиця жанр × рік видання:")
+print(pivot)
+
+
+# === 6. Побудова теплової карти ===
+plt.figure(figsize=(8,5))
+sns.heatmap(pivot, annot=True, fmt=".0f", cmap="YlGnBu")
+plt.title("Жанр × Рік видання (виручка)", fontsize=14)
+plt.xlabel("Рік видання")
+plt.ylabel("Жанр")
+plt.tight_layout()
+plt.show()
+
+
+# === 7. Збереження Результату ===
+pivot.to_csv("genre_year_heatmap.csv")
+print("\nРезультати збережено у файл genre_year_heatmap.csv")
+
+
+Результат
+ Зображення, що містить текст, знімок екрана, монітор, програмне забезпечення
+
+Вміст на основі ШІ може бути неправильним. 
+
+ Зображення, що містить текст, знімок екрана, монітор, число
+
+Вміст на основі ШІ може бути неправильним. 
+
+
+
+
+
+Як читати теплову карту
+      * Рядки — жанри книг.
+      * Стовпці — роки видання (PublishYear).
+      * Колір клітинки показує загальну виручку:
+      * темніший = більший дохід,
+      * світліший = менший.
+      * Підпис (annot=True) показує фактичні числові значення.
+________________
+
+
+Приклад інтерпретації
+З теплової карти видно, що жанр “Навчальна” забезпечував найбільшу виручку у 2025 році, тоді як “Художня література” була активнішою у 2023–2024 роках. Це може свідчити про зміну попиту та потенціал для розвитку навчальних видань.
+
+
+Як що в твоєму середовищі Python ще не встановлена бібліотека seaborn (вона не входить у стандартний набір). Це найпростіше виправити, ось покроково:
+
+
+
+
+________________
+
+
+🧩 1️⃣ Встановлення seaborn
+У командному рядку (CMD) набери:
+pip install seaborn
+або, якщо у тебе кілька версій Python:
+python -m pip install seaborn
+________________
+
+
+💡 2️⃣ Перевір, що все встановилося
+Після завершення інсталяції має з’явитись щось подібне:
+Successfully installed seaborn-0.13.2 ...
+Потім просто знову запусти свій скрипт:
+python connect_publishing8.py
+________________
+
+
+🧠 3️⃣ Якщо раптом знову буде помилка з pip
+(наприклад, pip not recognized) — тоді потрібно оновити pip:
+python -m ensurepip --upgrade
+python -m pip install --upgrade pip
+і потім знову:
+pip install seaborn
+
+
+________________
+
+
+
+
+🔷 Додай у це поле посилання на виконане завдання. 👇
+
+
+
+
+	
+
+🔷 Додай у це поле скрін(и) на виконане завдання. 👇
+
+
+
+
+	
+
+________________
+
+
+
+
+Задача 8. Створення інтерфейсу для аналітики
+
+
+Зробити зручний інтерфейс для аналітики — Streamlit. Це дасть веб-панель з кнопками, випадаючими списками й графіками без складної фронтенд-розробки.
+Нижче покроково, максимально детально: що натискати, що вводити, який код вставити.
+
+
+Підготовка середовища (одноразово)
+Відкрий «Пуск» → набери cmd → натисни Enter (відкриється Командний рядок).
+У командному рядку встанови пакети:
+python -m pip install --upgrade pip
+pip install streamlit pandas sqlalchemy pymysql matplotlib
+Переконайся, що у MySQL є база publishing і ти знаєш свій логін/пароль.
+________________
+
+
+
+
+      1. Створення проєкту
+
+
+Варіант A. Через Провідник Windows
+
+
+Відкрий папку, де зручно тримати проєкти, наприклад D:\база\Практичні\Готові.
+Клацни правою кнопкою миші у вільному місці → Створити → Папка → дай назву: publishing_app.
+Зайди в цю папку подвійним кліком.
+Правою кнопкою у вікні → Створити → Текстовий документ → назви файл: app.py
+Подвійний клік по app.py, щоб відкрити у Блокноті (або краще у Visual Studio Code / Visual Studio).
+
+
+Варіант B. Через Visual Studio Code
+
+
+Відкрий VS Code → File → Open Folder… → вибери папку publishing_app → Select Folder.
+Зліва зверху у панелі Explorer натисни New File (значок аркуша) → введи app.py→ Enter.
+
+
+
+
+      2. Вставка коду інтерфейсу
+
+
+# app.py
+# Видавництво — аналітика продажів (Streamlit)
+import streamlit as st
+import pandas as pd
+import matplotlib.pyplot as plt
+from sqlalchemy import create_engine
+
+
+st.set_page_config(page_title="Publishing Analytics", layout="wide")
+st.title("Видавництво — аналітика продажів")
+
+
+# ====================== ПІДКЛЮЧЕННЯ ДО БД ======================
+st.sidebar.header("Підключення до MySQL")
+
+
+host = st.sidebar.text_input("Host", value="localhost")
+port = st.sidebar.text_input("Port", value="3306")
+user = st.sidebar.text_input("User", value="root")
+password = st.sidebar.text_input("Password", type="password")
+database = st.sidebar.text_input("Database", value="publishing")
+
+
+connect_btn = st.sidebar.button("🔌 Підключитись")
+
+
+def build_conn_str(h, p, u, pw, db):
+    return f"mysql+pymysql://{u}:{pw}@{h}:{p}/{db}?charset=utf8mb4"
+
+
+@st.cache_data(show_spinner=False)
+def load_tables(conn_str: str):
+    eng = create_engine(conn_str)
+    books = pd.read_sql("SELECT * FROM Books", eng)
+    # важливо: розпарсити дату ще тут
+    orders = pd.read_sql("SELECT * FROM Orders", eng, parse_dates=["OrderDate"])
+    orderitem = pd.read_sql("SELECT * FROM OrderItem", eng)
+    return books, orders, orderitem
+
+
+def build_df(books, orders, orderitem):
+    df = (orderitem
+          .merge(orders, on="OrderID", how="left")
+          .merge(books, on="BookID", how="left"))
+    df["Revenue"] = df["Quantity"] * df["UnitPrice"]
+    # гарантуємо тип дати
+    if not pd.api.types.is_datetime64_any_dtype(df["OrderDate"]):
+        df["OrderDate"] = pd.to_datetime(df["OrderDate"])
+    return df
+
+
+def apply_date_filter(df, date_from, date_to):
+    out = df
+    if date_from:
+        out = out[out["OrderDate"].dt.date >= date_from]
+    if date_to:
+        out = out[out["OrderDate"].dt.date <= date_to]
+    return out
+
+
+# Сесійні дані
+if connect_btn:
+    try:
+        conn_str = build_conn_str(host, port, user, password, database)
+        b, o, oi = load_tables(conn_str)
+        st.session_state["books"] = b
+        st.session_state["orders"] = o
+        st.session_state["orderitem"] = oi
+        st.success("Підключення успішне і дані завантажено ✅")
+    except Exception as e:
+        st.error(f"Помилка підключення/завантаження: {e}")
+
+
+with st.expander("Показати перші рядки таблиць"):
+    if all(k in st.session_state for k in ("books", "orders", "orderitem")):
+        st.write("**Books**");  st.dataframe(st.session_state["books"].head(), width="stretch")
+        st.write("**Orders**"); st.dataframe(st.session_state["orders"].head(), width="stretch")
+        st.write("**OrderItem**"); st.dataframe(st.session_state["orderitem"].head(), width="stretch")
+    else:
+        st.info("Спершу натисни «Підключитись» у лівій панелі.")
+
+
+# якщо даних ще немає — зупиняємо додаток
+if not all(k in st.session_state for k in ("books", "orders", "orderitem")):
+    st.stop()
+
+
+# ====================== ФІЛЬТРИ ДАТИ (ГЛОБАЛЬНІ) ======================
+st.markdown("---")
+f1, f2 = st.columns(2)
+with f1:
+    date_from = st.date_input("Дата від", value=None)
+with f2:
+    date_to = st.date_input("Дата до", value=None)
+
+
+# будуємо єдину аналітичну таблицю та відразу фільтруємо
+df = build_df(st.session_state["books"], st.session_state["orders"], st.session_state["orderitem"])
+df_f = apply_date_filter(df, date_from, date_to)
+st.caption(f"🔎 Після фільтру: {len(df_f)} рядків | інтервал даних: "
+           f"{df_f['OrderDate'].min().date() if len(df_f) else '—'} → "
+           f"{df_f['OrderDate'].max().date() if len(df_f) else '—'}")
+
+
+# ====================== ВКЛАДКИ ======================
+tab_kpi, tab_viz = st.tabs(["📌 KPI", "📊 Візуалізації"])
+
+
+# ---------------- KPI ----------------
+with tab_kpi:
+    st.subheader("Основні показники продажів")
+
+
+    total_orders = int(df_f["OrderID"].nunique()) if len(df_f) else 0
+    total_units = int(df_f["Quantity"].sum()) if len(df_f) else 0
+    total_revenue = float(df_f["Revenue"].sum()) if len(df_f) else 0.0
+    avg_order_value = (float(df_f.groupby("OrderID")["Revenue"].sum().mean())
+                       if total_orders > 0 else 0.0)
+
+
+    c1, c2, c3, c4 = st.columns(4)
+    c1.metric("Кількість замовлень", f"{total_orders}")
+    c2.metric("Продано одиниць", f"{total_units}")
+    c3.metric("Загальна виручка, CHF", f"{total_revenue:,.2f}")
+    c4.metric("Середній чек, CHF", f"{avg_order_value:,.2f}")
+
+
+    st.markdown("#### Зведена таблиця по замовленнях")
+    order_rollup = (df_f.groupby("OrderID")
+                      .agg(OrderDate=("OrderDate", "first"),
+                           Client=("ClientName", "first"),
+                           Lines=("OrderItemID", "count"),
+                           Units=("Quantity", "sum"),
+                           Revenue=("Revenue", "sum"))
+                      .sort_values("OrderDate", ascending=False)
+                      .reset_index())
+    st.dataframe(order_rollup, width="stretch")
+
+
+    # Експорт KPI
+    kpi_df = pd.DataFrame({
+        "metric": ["total_orders", "total_units", "total_revenue", "avg_order_value"],
+        "value":  [total_orders, total_units, total_revenue, avg_order_value]
+    })
+    st.download_button(
+        "💾 Export KPI (CSV)",
+        data=kpi_df.to_csv(index=False).encode("utf-8"),
+        file_name="kpi.csv",
+        mime="text/csv"
+    )
+
+
+# ---------------- ВІЗУАЛІЗАЦІЇ ----------------
+with tab_viz:
+    st.subheader("Графіки")
+
+
+    chart_type = st.selectbox(
+        "Оберіть візуалізацію",
+        ["Топ жанри (виручка)",
+         "Динаміка продажів по місяцях",
+         "Правило Парето 80/20 по книгах"]
+    )
+    build_btn = st.button("📈 Побудувати")
+
+
+    if build_btn:
+        if chart_type == "Топ жанри (виручка)":
+            genre_rev = (df_f.groupby("Genre")["Revenue"]
+                           .sum()
+                           .sort_values(ascending=False)
+                           .reset_index())
+            fig, ax = plt.subplots(figsize=(8, 5))
+            ax.barh(genre_rev["Genre"], genre_rev["Revenue"])
+            ax.set_xlabel("Виручка (CHF)")
+            ax.set_ylabel("Жанр")
+            ax.invert_yaxis()
+            ax.grid(axis="x", linestyle="--", alpha=0.6)
+            st.pyplot(fig)
+            st.download_button(
+                "⬇️ Завантажити CSV",
+                data=genre_rev.to_csv(index=False).encode("utf-8"),
+                file_name="genre_revenue.csv",
+                mime="text/csv"
+            )
+
+
+        elif chart_type == "Динаміка продажів по місяцях":
+            df_f = df_f.copy()
+            df_f["YearMonth"] = df_f["OrderDate"].dt.to_period("M").astype(str)
+            rev_month = (df_f.groupby("YearMonth")["Revenue"]
+                           .sum()
+                           .reset_index()
+                           .sort_values("YearMonth"))
+            fig, ax = plt.subplots(figsize=(9, 5))
+            ax.plot(rev_month["YearMonth"], rev_month["Revenue"], marker="o")
+            ax.set_xlabel("Місяць")
+            ax.set_ylabel("Виручка (CHF)")
+            ax.grid(True, linestyle="--", alpha=0.6)
+            plt.xticks(rotation=45, ha="right")
+            st.pyplot(fig)
+            st.download_button(
+                "⬇️ Завантажити CSV",
+                data=rev_month.to_csv(index=False).encode("utf-8"),
+                file_name="revenue_by_month.csv",
+                mime="text/csv"
+            )
+
+
+        elif chart_type == "Правило Парето 80/20 по книгах":
+            book_rev = (df_f.groupby("Title")["Revenue"]
+                          .sum()
+                          .sort_values(ascending=False)
+                          .reset_index())
+            book_rev["CumRevenue"] = book_rev["Revenue"].cumsum()
+            book_rev["CumPercent"] = 100 * book_rev["CumRevenue"] / book_rev["Revenue"].sum()
+
+
+            fig, ax1 = plt.subplots(figsize=(10, 5))
+            ax1.bar(book_rev["Title"], book_rev["Revenue"])
+            ax1.set_xlabel("Книга")
+            ax1.set_ylabel("Виручка (CHF)")
+            ax1.tick_params(axis="x", rotation=30)
+            ax2 = ax1.twinx()
+            ax2.plot(book_rev["Title"], book_rev["CumPercent"], marker="o")
+            ax2.set_ylabel("Накопичувальний %")
+            ax2.axhline(80, linestyle="--")
+            ax1.grid(axis="y", linestyle="--", alpha=0.6)
+            st.pyplot(fig)
+            st.download_button(
+                "⬇️ Завантажити CSV",
+                data=book_rev.to_csv(index=False).encode("utf-8"),
+                file_name="book_pareto.csv",
+                mime="text/csv"
+            )
+
+
+      3. Запуск панелі
+
+
+Варіант 1. Якщо віртуальне середовище не створене:
+
+
+Крок 1. Перевір, що ти в правильній теці
+
+
+D:
+cd "D:\база\Практичні\Готові\publishing_app"
+.\env\Scripts\activate
+
+
+
+Наприклад:
+D:\база\Практичні\Готові\publishing_app
+
+У командному рядку напиши:
+cd "D:\база\Практичні\Готові\publishing_app"
+dir
+
+І перевір, що видно app.py у списку файлів.
+
+
+Крок 2. Створи віртуальне середовище
+Якщо його ще немає, виконай:
+python -m venv env
+(це створить папку env усередині publishing_app).
+
+
+Крок 3. Активуй середовище
+env\Scripts\activate
+Після цього у тебе має з’явитися префікс:
+(env) D:\база\Практичні\Готові\publishing_app>
+
+
+Крок 4. Встанови бібліотеки
+pip install --upgrade pip
+pip install streamlit pandas sqlalchemy pymysql matplotlib seaborn pyarrow
+
+
+Крок 5. Запусти застосунок
+python -m streamlit run app.py
+
+
+
+
+Варіант 2. Якщо віртуальне середовище створене:
+
+
+Крок 1. Виконай код
+
+
+D:
+cd "D:\база\Практичні\Готові\publishing_app"
+.\env\Scripts\activate
+
+
+Крок 2. Запусти застосунок
+python -m streamlit run app.py
+
+
+Результат
+ Зображення, що містить текст, електроніка, знімок екрана, програмне забезпечення
+
+Вміст на основі ШІ може бути неправильним. 
+
+
+
+Відкриється браузер зі сторінкою інтерфейсу (якщо не відкрився — у консолі буде посилання; клацни по ньому).
+ Зображення, що містить текст, знімок екрана, програмне забезпечення, Комп’ютерна піктограма
+
+Вміст на основі ШІ може бути неправильним. 
+
+
+
+Інструкція користування додатком «Publishing Analytics»
+1. Запуск застосунку
+      1. Відкрий термінал (cmd).
+      2. Перейди до папки, де збережено проєкт:
+      3. Наприклад: cd "D:\база\Практичні\Готові\publishing_app"
+      4. Запусти додаток командою:
+python -m streamlit run app.py
+      5. Через кілька секунд відкриється браузер за адресою
+👉 http://localhost:8501
+Якщо сторінка не відкрилась автоматично — введи цю адресу вручну.
+
+
+2. Підключення до бази даних
+У лівій частині інтерфейсу знаходиться панель підключення MySQL:
+Поле
+	Призначення
+	Типові значення
+	Host
+	адреса сервера бази даних
+	localhost
+	Port
+	порт MySQL
+	3306
+	User
+	користувач
+	root
+	Password
+	пароль до MySQL
+	ввести власний
+	Database
+	назва бази даних
+	publishing
+	         1. Заповни всі поля.
+         2. Натисни кнопку «Підключитись».
+         3. Якщо все правильно — з’явиться повідомлення
+✅ «Підключення успішне і дані завантажено».
+
+
+3. Перегляд даних
+Після підключення можна розгорнути блок
+«Показати перші рядки таблиць» —
+щоб побачити початок таблиць Books, Orders, OrderItem.
+
+
+4. Фільтрація за датою
+У верхній частині головного вікна є два поля:
+            * Дата від — початкова дата вибірки
+            * Дата до — кінцева дата вибірки
+Після вибору проміжку, усі розрахунки і графіки оновляться автоматично.
+Під фільтрами з’явиться інформаційний рядок:
+🔎 Після фільтру: 120 рядків | інтервал даних: 2025-01-01 → 2025-03-31
+
+
+5. Вкладка «KPI»
+Ця вкладка містить основні показники продажів:
+Показник
+	Значення
+	Кількість замовлень
+	кількість унікальних OrderID
+	Продано одиниць
+	загальна кількість проданих книжок
+	Загальна виручка, CHF
+	сумарний дохід за вибраний період
+	Середній чек, CHF
+	середня виручка з одного замовлення
+	Під показниками розташована зведена таблиця по замовленнях, у якій наведено:
+            * номер замовлення,
+            * дату,
+            * клієнта,
+            * кількість рядків, одиниць і суму виручки.
+
+Експорт KPI
+Натисни кнопку 💾 Export KPI (CSV), щоб зберегти файл kpi.csv із ключовими показниками.
+
+
+6. Вкладка «Візуалізації»
+Тут можна побудувати три види графіків:
+1️⃣ Топ жанри (виручка)
+Показує, які жанри приносять найбільшу виручку.
+Виводиться горизонтальна гістограма.
+
+2️⃣ Динаміка продажів по місяцях
+Будується лінійний графік виручки за місяцями.
+На осі X — місяць, на осі Y — сума продажів (CHF).
+
+3️⃣ Правило Парето 80/20
+Показує, які книги дають 80% виручки.
+Стовпчики — прибуток по книгах, лінія — накопичувальний відсоток.
+
+Щоб побудувати графік:
+            1. Обери тип у випадаючому списку «Оберіть візуалізацію».
+            2. Натисни 📈 Побудувати.
+            3. Графік з’явиться нижче, під ним — кнопка
+⬇️ Завантажити CSV для експорту даних.
+
+
+7. Завершення роботи
+Коли закінчиш:
+               1. У вікні командного рядка натисни Ctrl + C,
+щоб зупинити Streamlit-сервер.
+               2. Вікно можна закрити.
+
+
+Підсумок
+Додаток дозволяє:
+                  * підключатись до бази MySQL,
+                  * переглядати й аналізувати дані продажів,
+                  * будувати аналітичні KPI та графіки,
+                  * експортувати Результати в CSV.
+
+
+________________
+
+
+
+
+🔵Зворотний зв’язок викладача
+
+
+
+
+	
+
+________________
+
+
+________________
+
+
+
+
+
+
+
+
+А тепер прикріпи посилання на цей зошит у LMS, а також безпосередньо файл зошиту, щоб викладач перевірив твоє завдання.
+Не забудь відкрити доступ на редагування!
