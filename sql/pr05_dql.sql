@@ -33,7 +33,7 @@ SELECT b.Title, SUM(oi.Quantity * oi.UnitPrice) AS Revenue
 FROM OrderItem oi
 JOIN Books b ON b.BookID = oi.BookID
 GROUP BY b.Title
-HAVING Revenue > 1000
+HAVING Revenue > 100
 ORDER BY Revenue DESC;
 
 -- ===== Задача 6. Вкладені запити (IN) =======================================
